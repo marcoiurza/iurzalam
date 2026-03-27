@@ -1,26 +1,26 @@
 const withQuery = (url, width) => `${url}?auto=format&fit=crop&w=${width}&q=85`;
 
 export const images = {
-  HERO_MAIN: withQuery("https://images.unsplash.com/photo-1763076470404-23554ef26747", 2200),
+  HERO_MAIN: withQuery("https://images.unsplash.com/photo-1600585154340-be6161a56a0c", 2200),
   KITCHEN_1: withQuery("https://images.unsplash.com/photo-1556909172-54557c7e4fb7", 1600),
   KITCHEN_2: withQuery("https://images.unsplash.com/photo-1600585154526-990dced4db0d", 1600),
   BATHROOM_1: withQuery("https://images.unsplash.com/photo-1552321554-5fefe8c9ef14", 1600),
   BATHROOM_2: withQuery("https://images.unsplash.com/photo-1600566752355-35792bedcfea", 1600),
-  OFFICE_1: withQuery("https://images.unsplash.com/photo-1770992225308-154250075727", 1600),
-  OFFICE_2: withQuery("https://images.unsplash.com/photo-1758448721162-0c77cf477d6f", 1600),
+  OFFICE_1: withQuery("https://images.unsplash.com/photo-1497366216548-37526070297c", 1600),
+  OFFICE_2: withQuery("https://images.unsplash.com/photo-1497366412874-3415097a27e7", 1600),
   COMMERCIAL_1: withQuery("https://images.unsplash.com/photo-1414235077428-338989a2e8c0", 1600),
   COMMERCIAL_2: withQuery("https://images.unsplash.com/photo-1600585154363-67eb9e2e2099", 1600),
-  EXTERIOR_1: withQuery("https://images.unsplash.com/photo-1769522721964-75f79435f666", 1600),
+  EXTERIOR_1: withQuery("https://images.unsplash.com/photo-1486325212027-8081e485255e", 1600),
   EXTERIOR_2: withQuery("https://images.unsplash.com/photo-1545324418-cc1a3fa10c00", 1600),
-  LOCKER_1: withQuery("https://images.unsplash.com/photo-1715211021581-664ec4df3d51", 1600),
-  WASHROOM_1: withQuery("https://images.unsplash.com/photo-1766371900891-790c9f1e3d8e", 1600),
-  MATERIAL_CLOSE: withQuery("https://images.unsplash.com/photo-1752321532656-43e714c3deba", 1600),
+  LOCKER_1: withQuery("https://images.unsplash.com/photo-1558618666-fcd25c85cd64", 1600),
+  WASHROOM_1: withQuery("https://images.unsplash.com/photo-1563013544-824ae1b704d3", 1600),
+  MATERIAL_CLOSE: withQuery("https://images.unsplash.com/photo-1558618047-3c8c76ca7d13", 1600),
   MATERIAL_STONE: withQuery("https://images.unsplash.com/photo-1541123437800-1bb1317badc2", 1600),
   MATERIAL_WOOD: withQuery("https://images.unsplash.com/photo-1558618666-fcd25c85cd64", 1600),
   SHOWROOM: withQuery("https://images.unsplash.com/photo-1555041469-a586c61ea9bc", 1600),
   HERITAGE: withQuery("https://images.unsplash.com/photo-1541123437800-1bb1317badc2", 1800),
   EUROPE_CITY: withQuery("https://images.unsplash.com/photo-1467269204594-9661b134dd2b", 1200),
-  WAREHOUSE: withQuery("https://images.unsplash.com/photo-1764046155497-ad7e50737ffa", 1800)
+  WAREHOUSE: withQuery("https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d", 1800)
 };
 
 export const navLinks = [
