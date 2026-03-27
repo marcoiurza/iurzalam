@@ -54,8 +54,8 @@ function Footer() {
       </div>
 
       <div className="site-footer__lower">
-        <p>© 2025 Iurza Decorative Surfaces Ltd. Registered in England &amp; Wales No. 16980223.</p>
-        <p>71-75 Shelton Street · London WC2H 9JQ</p>
+        <p>&copy; 2025 Iurza Decorative Surfaces Ltd. Registered in England &amp; Wales No. 16980223.</p>
+        <p>71-75 Shelton Street &middot; London WC2H 9JQ</p>
       </div>
     </footer>
   );

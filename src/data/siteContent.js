@@ -33,30 +33,29 @@ export const navLinks = [
 
 export const certificationItems = [
   { abbr: "ETA", desc: "European Technical Assessment" },
-  { abbr: "CE", desc: "CE Certificate + DoP" },
   { abbr: "FSC", desc: "Forest Stewardship Council" },
-  { abbr: "EPD", desc: "Environmental Product Declaration" },
-  { abbr: "HPD", desc: "Health Product Declaration" },
-  { abbr: "NSF", desc: "Food Contact Certification" }
+  { abbr: "PEFC", desc: "Programme for Endorsement" },
+  { abbr: "Greenguard", desc: "UL Environment Certified" },
+  { abbr: "CATAS", desc: "Independent European Testing" }
 ];
 
 export const homeApplications = [
   {
     image: images.KITCHEN_1,
     title: "Kitchen Worktops",
-    desc: "HPL Standard - Matt finish",
+    desc: "HPL Standard \u00B7 Matt finish",
     alt: "Professional kitchen worktops finished in matte decorative laminate"
   },
   {
     image: images.BATHROOM_1,
     title: "Bathroom Vanity",
-    desc: "HPL Standard - Gloss finish",
+    desc: "HPL Standard \u00B7 Gloss finish",
     alt: "Bathroom vanity surfaces specified in gloss decorative laminate"
   },
   {
     image: images.OFFICE_1,
     title: "Office Wall Panelling",
-    desc: "HPL Standard - Wood decor",
+    desc: "HPL Standard \u00B7 Wood decor",
     alt: "Office interior wall panelling in wood decor decorative laminate"
   },
   {
@@ -68,7 +67,7 @@ export const homeApplications = [
   {
     image: images.EXTERIOR_1,
     title: "Exterior Cladding",
-    desc: "Compact Laminate - UV-stable",
+    desc: "Compact Laminate \u00B7 UV-stable",
     alt: "Exterior facade cladding built with compact laminate panels"
   },
   {
@@ -79,7 +78,7 @@ export const homeApplications = [
   },
   {
     image: images.MATERIAL_CLOSE,
-    title: "Surface systems specified for durability",
+    title: "Surfaces designed to perform for decades",
     desc: "",
     alt: "Decorative surface material samples arranged for product specification"
   },
@@ -92,22 +91,22 @@ export const homeApplications = [
 ];
 
 export const reachMarkets = [
-  { flag: "UK", country: "United Kingdom", status: "Active" },
-  { flag: "NL", country: "Netherlands", status: "Active" },
-  { flag: "BE", country: "Belgium", status: "Active" },
-  { flag: "PL", country: "Poland", status: "Active" },
-  { flag: "DE", country: "Germany", status: "Active" },
-  { flag: "CH", country: "Switzerland", status: "Active" },
-  { flag: "GL", country: "Rest of World", status: "Supplied via full container or warehouse shipment" }
+  { flag: "\uD83C\uDDEC\uD83C\uDDE7", country: "United Kingdom", status: "Active" },
+  { flag: "\uD83C\uDDF3\uD83C\uDDF1", country: "Netherlands", status: "Active" },
+  { flag: "\uD83C\uDDE7\uD83C\uDDEA", country: "Belgium", status: "Active" },
+  { flag: "\uD83C\uDDF5\uD83C\uDDF1", country: "Poland", status: "Active" },
+  { flag: "\uD83C\uDDE9\uD83C\uDDEA", country: "Germany", status: "Active" },
+  { flag: "\uD83C\uDDE8\uD83C\uDDED", country: "Switzerland", status: "Active" },
+  { flag: "\uD83C\uDF0D", country: "Rest of World", status: "Supplied via full container or warehouse shipment" }
 ];
 
 export const europeanCards = [
-  { flag: "UK", country: "United Kingdom" },
-  { flag: "NL", country: "Netherlands" },
-  { flag: "BE", country: "Belgium" },
-  { flag: "PL", country: "Poland" },
-  { flag: "DE", country: "Germany" },
-  { flag: "CH", country: "Switzerland" }
+  { flag: "\uD83C\uDDEC\uD83C\uDDE7", country: "United Kingdom" },
+  { flag: "\uD83C\uDDF3\uD83C\uDDF1", country: "Netherlands" },
+  { flag: "\uD83C\uDDE7\uD83C\uDDEA", country: "Belgium" },
+  { flag: "\uD83C\uDDF5\uD83C\uDDF1", country: "Poland" },
+  { flag: "\uD83C\uDDE9\uD83C\uDDEA", country: "Germany" },
+  { flag: "\uD83C\uDDE8\uD83C\uDDED", country: "Switzerland" }
 ];
 
-export const footerCerts = ["ETA", "CE", "FSC", "GREENGUARD Gold", "EPD", "NSF"];
+export const footerCerts = ["ETA", "FSC", "PEFC", "Greenguard", "CATAS"];

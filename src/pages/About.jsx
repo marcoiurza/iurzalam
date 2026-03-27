@@ -5,30 +5,30 @@ import { useReveal } from "../hooks/useReveal";
 const timeline = [
   [
     "1968",
-    "Grandfather enters the decorative laminate trade, establishing the first commercial relationships and the market instincts the business still draws on today."
+    "The Iurza family enters European laminate distribution - among the first to import laminates from India into Europe."
   ],
   [
-    "1998",
-    "Father expands the network across Europe, deepening supply relationships and strengthening the commercial discipline around professional buyers and repeat trade."
+    "Second generation",
+    "The network expands across Europe. Direct commercial relationships established with distributors and fabricators across Switzerland, Germany, and the Benelux."
   ],
   [
-    "2026",
-    "Marco launches IurzaLam to bring that accumulated knowledge into a modern distribution business focused on owned products, documentation-led specification, and scalable supply."
+    "Third generation",
+    "IurzaLam is founded to bring three generations of knowledge, relationships, and product expertise to a modern, scalable distribution business."
   ]
 ];
 
 const businessCards = [
   {
     title: "Product Ownership",
-    body: "We sell our products under the IurzaLam name. Our range is documented, independently certified where applicable, and backed by complete specification paperwork. Not sourced on demand - curated, specified, and owned."
+    body: "We sell our products under the IurzaLam name. Our range is fully certified, independently tested, and backed by complete European documentation. Not sourced on demand - curated, specified, and owned."
   },
   {
-    title: "Documentation-Led",
-    body: "We built the range around the paperwork professional buyers actually need: ETA, CE, DoP, FSC, GREENGUARD, EPD, HPD, ISO systems, fire classification, food-contact, marine, recycled-content, and additional market-specific documentation."
+    title: "Certification-Led",
+    body: "We built our product range around certifications, not despite them. ETA, FSC, PEFC, Greenguard, CATAS - every standard required by the European market. Because a product you cannot specify is a product you cannot sell."
   },
   {
     title: "Logistics Infrastructure",
-    body: "Italy warehouse for flexible quantities. Full container option for volume buyers. The same products, the same documentation, the same relationship - whether you are ordering a single pallet or a full container."
+    body: "Italy warehouse for flexible quantities. Full container option for volume buyers. The same products, the same certifications, the same documentation - whether you are ordering a single pallet or a full container."
   }
 ];
 
@@ -38,18 +38,18 @@ const companyInfo = [
   ["Company number", "16980223"],
   ["Jurisdiction", "England & Wales"],
   ["Registered office", "71-75 Shelton Street, London WC2H 9JQ"],
-  ["SIC code", "46730 - Wholesale of wood, construction materials"],
+  ["SIC code", "46730 \u2014 Wholesale of wood, construction materials"],
   ["Logistics hub", "Italy"],
-  ["Coverage", "Europe (primary) - Global (full container)"]
+  ["Coverage", "Europe (primary) \u00B7 Global (full container)"]
 ];
 
 const countryCards = [
-  ["UK", "United Kingdom", "Active"],
-  ["NL", "Netherlands", "Active"],
-  ["BE", "Belgium", "Active"],
-  ["PL", "Poland", "Active"],
-  ["DE", "Germany", "Active"],
-  ["CH", "Switzerland", "Active"]
+  ["\uD83C\uDDEC\uD83C\uDDE7", "United Kingdom", "Active"],
+  ["\uD83C\uDDF3\uD83C\uDDF1", "Netherlands", "Active"],
+  ["\uD83C\uDDE7\uD83C\uDDEA", "Belgium", "Active"],
+  ["\uD83C\uDDF5\uD83C\uDDF1", "Poland", "Active"],
+  ["\uD83C\uDDE9\uD83C\uDDEA", "Germany", "Active"],
+  ["\uD83C\uDDE8\uD83C\uDDED", "Switzerland", "Active"]
 ];
 
 function About() {
@@ -83,10 +83,11 @@ function About() {
               ))}
             </div>
             <aside className="pull-quote-card">
-              <span className="pull-quote-card__mark">"</span>
+              <span className="pull-quote-card__mark">&ldquo;</span>
               <blockquote>
-                Grandfather in 1968. Father in 1998. Marco in 2026. The dates matter because continuity matters:
-                judgement in this industry is accumulated over years of trade, not assembled for a launch.
+                The Iurza family has traded European decorative laminates since 1968. Three generations of market
+                knowledge, supplier relationships, and specification expertise - built over decades, not assembled
+                for a launch.
               </blockquote>
             </aside>
           </div>

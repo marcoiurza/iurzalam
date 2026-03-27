@@ -9,7 +9,7 @@ const warehouseList = [
   "Any quantity from single pallet",
   "Consolidated and mixed-product orders",
   "Flexible call-off arrangements",
-  "Italy-based — optimised for European delivery"
+  "Italy-based - optimised for European delivery"
 ];
 
 const containerList = [
@@ -20,14 +20,14 @@ const containerList = [
 ];
 
 const coverageItems = [
-  ["🇬🇧", "United Kingdom", "Active"],
-  ["🇳🇱", "Netherlands", "Active"],
-  ["🇧🇪", "Belgium", "Active"],
-  ["🇵🇱", "Poland", "Active"],
-  ["🇩🇪", "Germany", "Active"],
-  ["🇨🇭", "Switzerland", "Active"],
-  ["🇮🇹", "Italy", "Warehouse & logistics hub"],
-  ["🌍", "Rest of World", "Full container direct"]
+  ["\uD83C\uDDEC\uD83C\uDDE7", "United Kingdom", "Active"],
+  ["\uD83C\uDDF3\uD83C\uDDF1", "Netherlands", "Active"],
+  ["\uD83C\uDDE7\uD83C\uDDEA", "Belgium", "Active"],
+  ["\uD83C\uDDF5\uD83C\uDDF1", "Poland", "Active"],
+  ["\uD83C\uDDE9\uD83C\uDDEA", "Germany", "Active"],
+  ["\uD83C\uDDE8\uD83C\uDDED", "Switzerland", "Active"],
+  ["\uD83C\uDDEE\uD83C\uDDF9", "Italy", "Warehouse & logistics hub"],
+  ["\uD83C\uDF0D", "Rest of World", "Full container direct"]
 ];
 
 function Logistics() {
@@ -37,7 +37,7 @@ function Logistics() {
 
   return (
     <>
-      <PageTitle title="Logistics · IurzaLam" />
+      <PageTitle title="Logistics - IurzaLam" />
 
       <main>
         <section className="page-hero" style={{ backgroundImage: `url(${images.WAREHOUSE})` }}>
@@ -62,7 +62,7 @@ function Logistics() {
                 </div>
                 <h3>Warehouse Stock</h3>
                 <p>
-                  Products held in our Italian warehouse and available at any quantity — from a single pallet
+                  Products held in our Italian warehouse and available at any quantity - from a single pallet
                   upwards. Ideal for distributors and fabricators who need regular, flexible supply without the
                   commitment of a full container. Shorter lead times, consolidated orders, flexible call-off.
                 </p>
@@ -98,7 +98,7 @@ function Logistics() {
             <p className="section-label">COVERAGE</p>
             <h2 className="section-title">Europe is home. Everywhere else is reachable.</h2>
             <p className="section-copy coverage-copy">
-              Our Italian warehouse is positioned at the centre of European logistics networks — within reach of
+              Our Italian warehouse is positioned at the centre of European logistics networks - within reach of
               every major market. For buyers outside Europe, full container direct shipment is available to any port
               worldwide.
             </p>

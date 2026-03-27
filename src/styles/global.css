@@ -269,6 +269,10 @@ main {
   gap: 10px;
 }
 
+.btn-text::after {
+  content: "\2192";
+}
+
 .reveal {
   opacity: 0;
   transform: translateY(28px);
@@ -278,6 +282,54 @@ main {
 .reveal.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+.reveal-stagger > * {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.reveal-stagger.visible > *:nth-child(1) {
+  opacity: 1;
+  transform: none;
+  transition-delay: 0s;
+}
+
+.reveal-stagger.visible > *:nth-child(2) {
+  opacity: 1;
+  transform: none;
+  transition-delay: 0.1s;
+}
+
+.reveal-stagger.visible > *:nth-child(3) {
+  opacity: 1;
+  transform: none;
+  transition-delay: 0.2s;
+}
+
+.reveal-stagger.visible > *:nth-child(4) {
+  opacity: 1;
+  transform: none;
+  transition-delay: 0.3s;
+}
+
+@keyframes revealFallback {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero + .cert-strip,
+.hero + section {
+  opacity: 1 !important;
+  transform: none !important;
 }
 
 @keyframes heroFadeUp {
@@ -2047,7 +2099,7 @@ main {
   font-size: 12px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .site-nav__links,
   .site-nav__actions .btn-primary {
     display: none;
@@ -2058,7 +2110,9 @@ main {
     align-items: center;
     justify-content: center;
   }
+}
 
+@media (max-width: 1024px) {
   .section-header--split,
   .reach-grid,
   .cert-intro,

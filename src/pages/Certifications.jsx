@@ -4,86 +4,71 @@ import PageTitle from "../components/PageTitle";
 import { images } from "../data/siteContent";
 import { useReveal } from "../hooks/useReveal";
 
-const primaryCredentials = [
+const certifications = [
   {
     key: "ETA",
     full: "European Technical Assessment",
     title: "European Technical Assessment",
     bodyOne:
-      "The European Technical Assessment is the formal approval framework used for construction products on permanent works across the EU and EEA. It supports Declaration of Performance requirements, CE marking workflows, and project-level compliance where specifiers and contractors need formal technical approval.",
+      "The European Technical Assessment is the formal approval framework mandated by the Construction Products Regulation (CPR) for products used in permanent works across the EU and EEA. It provides the Declaration of Performance (DoP) required for CE marking and full regulatory compliance on notified projects - covering mechanical resistance, fire safety, hygiene, and durability.",
     bodyTwo:
-      "For specifiers and main contractors working to CPR requirements, ETA documentation is a threshold item rather than a marketing extra. It supports due diligence on regulated projects where performance, durability, and compliance evidence all need to be documented clearly.",
+      "For specifiers and main contractors working to CPR requirements, ETA certification is non-negotiable. It is the threshold standard for specification on public sector, healthcare, education, and infrastructure projects across Europe. Every product in the IurzaLam range carries ETA certification.",
     relevant:
-      "Public sector specification - Main contractor procurement - CPR-notified projects - Healthcare and education build programmes - EU and EEA construction works",
+      "Public sector specification \u00B7 Main contractor procurement \u00B7 CPR-notified projects \u00B7 Healthcare and education build programmes \u00B7 EU and EEA construction works",
     background: "stone"
-  },
-  {
-    key: "CE",
-    full: "CE Certificate + Declaration of Performance",
-    title: "CE Certificate and Declaration of Performance",
-    bodyOne:
-      "The compliance folder includes CE Certificate and Declaration of Performance documentation, giving buyers the formal paperwork needed to support CE-marked product supply on applicable projects. In practice, this is often the document set procurement teams ask for first.",
-    bodyTwo:
-      "Together with ETA documentation, the CE and DoP paperwork gives specifiers, contractors, and distributors a usable route from product selection to compliance file. That matters on live projects where technical documentation needs to be shared quickly and without ambiguity.",
-    relevant:
-      "Project compliance files - CE-marked supply - Main contractor due diligence - Procurement documentation - Technical submittals",
-    background: "white"
   },
   {
     key: "FSC",
     full: "Forest Stewardship Council",
     title: "Forest Stewardship Council",
     bodyOne:
-      "FSC Chain of Custody documentation confirms responsible fibre sourcing and is the benchmark many professional buyers use when responsible materials policies are part of the specification process. It remains one of the most recognisable sustainability credentials in the market.",
+      "FSC certification confirms that the wood fibre used in manufacturing originates from forests managed in accordance with FSC Principles and Criteria - covering environmental integrity, social responsibility, and economic sustainability. It is the globally recognised benchmark for responsible forest management.",
     bodyTwo:
-      "For projects targeting responsible sourcing credits or operating under internal ESG policies, FSC paperwork is often mandatory. It supports public procurement, green building targets, and corporate reporting where material provenance needs to be documented, not assumed.",
+      "For projects targeting BREEAM, LEED, DGNB, or other green building credentials, FSC chain-of-custody documentation is required for responsible sourcing credits. It satisfies the UK Timber Procurement Policy, EU Timber Regulation, and equivalent national frameworks.",
     relevant:
-      "Responsible sourcing policies - BREEAM and LEED projects - Public procurement - ESG reporting - Corporate specification frameworks",
+      "BREEAM and LEED projects \u00B7 Public sector procurement \u00B7 ESG and sustainability reporting \u00B7 Corporate responsible sourcing policies",
+    background: "white"
+  },
+  {
+    key: "PEFC",
+    full: "Programme for Endorsement of Forest Certification",
+    title: "Programme for the Endorsement of Forest Certification",
+    bodyOne:
+      "PEFC is the world's largest forest certification organisation, endorsing national certification schemes across more than 50 countries. Widely accepted within European public sector procurement as equivalent to FSC, it is recognised under EU timber import regulations and national frameworks including the UK Timber Procurement Policy.",
+    bodyTwo:
+      "PEFC chain-of-custody certification provides an unbroken, audited documentation trail from forest to finished product - giving procurement teams verifiable, third-party confirmed evidence of legal and sustainable timber sourcing.",
+    relevant:
+      "European public procurement \u00B7 Sustainable building standards \u00B7 Corporate responsibility reporting \u00B7 BREEAM and LEED credits",
     background: "stone"
   },
   {
     key: "GG",
-    full: "GREENGUARD + GREENGUARD Gold",
-    title: "GREENGUARD and GREENGUARD Gold",
+    full: "Greenguard Gold - UL Environment",
+    title: "Greenguard Gold - UL Environment",
     bodyOne:
-      "The compliance library includes both GREENGUARD and GREENGUARD Gold documentation for HPL, covering low-emission indoor air quality requirements. These credentials are especially relevant where the product sits inside healthcare, education, workplace, and public-use environments.",
+      "Greenguard certification, administered by UL Environment, verifies that a product meets strict chemical emission limits for volatile organic compounds (VOCs), formaldehyde, and more than 360 other chemicals. Products are tested to the most rigorous indoor air quality standards and re-certified annually.",
     bodyTwo:
-      "For specifiers working on sensitive interiors, GREENGUARD Gold is often the stronger reference point because it addresses the stricter end of the emissions conversation. Having both documents available gives buyers a clearer documentation path for indoor-use projects.",
+      "Greenguard Gold applies the most stringent emission criteria - specifically developed for products used in environments occupied by children and vulnerable adults. It satisfies the LEED v4 EQ credit for low-emitting materials and is the standard required by UK healthcare design guidance (HTM), education guidance (BB103), and childcare specifications.",
     relevant:
-      "Indoor air quality requirements - Education and healthcare interiors - Workplace fit-outs - Low-emission specifications - Sensitive occupancy environments",
+      "Schools and educational facilities \u00B7 NHS and healthcare environments \u00B7 Childcare and nursery projects \u00B7 LEED v4 EQ credits \u00B7 Indoor air quality requirements",
     background: "white"
   },
   {
-    key: "EPD",
-    full: "EPD + HPD",
-    title: "Environmental and Health Declarations",
+    key: "CATAS",
+    full: "European Testing & Certification",
+    title: "CATAS - European Testing & Certification",
     bodyOne:
-      "The documentation set includes both EPD and HPD material declarations. That means specifiers and sustainability consultants can review not just certification status but broader environmental and health disclosure information for the product set under review.",
+      "CATAS is the leading independent European research, testing, and certification body for wood-based panels, furniture, and interior materials, accredited to ISO 17025 and ISO 17065. CATAS testing is the accepted third-party verification standard for mechanical performance, surface resistance, dimensional stability, and durability across European specification frameworks.",
     bodyTwo:
-      "These declarations are especially useful when the conversation moves beyond technical approval into sustainability reporting, material transparency, embodied impact, or internal client governance around approved product classes.",
+      "CATAS certification provides the independently verified technical performance data - to applicable European standards including EN 438 for HPL sheets and EN 14322 for related panels - that procurement teams require for due diligence on material specification. CATAS reports are accepted by European specification authorities across both public and private sector procurement.",
     relevant:
-      "Sustainability reporting - Material transparency reviews - Green building submissions - Consultant due diligence - Corporate governance on materials",
+      "Technical specification compliance \u00B7 Procurement due diligence \u00B7 EN 438 / EN 14322 standards \u00B7 Independent performance verification",
     background: "stone"
   }
 ];
 
-const additionalCredentials = [
-  ["ISO 9001", "Quality management certification"],
-  ["ISO 14001", "Environmental management certification"],
-  ["ISO 45001", "Occupational health and safety certification"],
-  ["M1", "Low-emission Finland classification"],
-  ["NSF", "Food-contact certification"],
-  ["Fire Resistance", "Independent fire classification report"],
-  ["DNV Marine", "Marine equipment directive documentation"],
-  ["Recycled Content", "Recycled content certificate"],
-  ["SGBP", "Swiss Green Building documentation"],
-  ["Singapore Green Label", "Regional environmental certification"],
-  ["Anti-Fungal ASTM G21", "Surface performance test report"]
-];
-
 function Certifications() {
   const introRef = useReveal();
-  const additionalRef = useReveal();
   const docsRef = useReveal();
 
   return (
@@ -91,16 +76,14 @@ function Certifications() {
       <PageTitle title="Certifications - IurzaLam" />
 
       <main>
-        <section className="page-hero page-hero--centered" style={{ backgroundImage: `url(${images.MATERIAL_CLOSE})` }}>
+        <section className="page-hero page-hero--centered" style={{ backgroundImage: `url(${images.MATERIAL_STONE})` }}>
           <div className="page-hero__overlay page-hero__overlay--forest" />
           <div className="page-hero__content page-hero__content--centered">
-            <p className="section-label section-label--light">COMPLIANCE &amp; DOCUMENTATION</p>
-            <h1>
-              More than badges. <em>Usable documentation.</em>
-            </h1>
+            <p className="section-label section-label--light">COMPLIANCE &amp; CERTIFICATION</p>
+            <h1>Every certificate that matters.</h1>
             <p>
-              Our range is supported by a broad library of certificates, declarations, and test reports for
-              specification, procurement, sustainability review, and project documentation.
+              Our complete range carries every certification required for professional specification, public
+              procurement, and sustainable sourcing across Europe.
             </p>
           </div>
         </section>
@@ -108,43 +91,44 @@ function Certifications() {
         <section className="section section--white">
           <div ref={introRef} className="cert-intro reveal">
             <div>
-              <h2 className="section-title">Compliance is part of the product offer.</h2>
+              <h2 className="section-title">Certification is not a formality.</h2>
               <p className="section-copy">
-                The compliance folder currently includes 19 documented items across certificates, declarations, and
-                technical reports. That matters because professional buyers do not just need a panel - they need a
-                panel backed by paperwork that can move through procurement, specification, and project approval.
+                For specifiers working to CPR requirements, procurement teams applying BREEAM or LEED criteria, or
+                fabricators supplying the healthcare and education sectors, a laminate product without the correct
+                certifications is simply not specifiable. Our range carries the complete set of approvals demanded
+                by the European market - built in from the start, not added later.
               </p>
             </div>
             <div className="cert-intro__stats">
               <div className="cert-intro__stat">
-                <strong>19</strong>
-                <span>Documented certificates, declarations, and reports</span>
+                <strong>5</strong>
+                <span>Certifications. Every product.</span>
               </div>
               <div className="cert-intro__stat">
-                <strong>ETA + CE</strong>
-                <span>Core technical paperwork for regulated project environments</span>
+                <strong>ETA</strong>
+                <span>Required for CPR compliance on permanent works</span>
               </div>
               <div className="cert-intro__stat">
                 <strong>100%</strong>
-                <span>Documentation available on request for professional review</span>
+                <span>Of our range. No exceptions.</span>
               </div>
             </div>
           </div>
         </section>
 
-        {primaryCredentials.map((item) => (
+        {certifications.map((item) => (
           <section
             key={item.key}
             className={`section ${item.background === "stone" ? "section--stone" : "section--white"}`}
           >
             <div className="cert-detail">
               <div className="cert-detail__content">
-                <p className="section-label">{item.key}</p>
+                <p className="section-label">{item.key === "GG" ? "GREENGUARD" : item.key}</p>
                 <h2 className="section-title section-title--small">{item.title}</h2>
                 <p className="section-copy">{item.bodyOne}</p>
                 <p className="section-copy">{item.bodyTwo}</p>
                 <div className="cert-callout">
-                  <span>Relevant for</span>
+                  <span>RELEVANT FOR</span>
                   <p>{item.relevant}</p>
                 </div>
               </div>
@@ -160,36 +144,14 @@ function Certifications() {
           </section>
         ))}
 
-        <section className="section section--white">
-          <div ref={additionalRef} className="reveal">
-            <div className="section-header section-header--narrow">
-              <p className="section-label">ADDITIONAL DOCUMENTATION</p>
-              <h2 className="section-title">Additional credentials in the current compliance library</h2>
-              <p className="section-subtitle section-subtitle--left">
-                Beyond the core credentials above, the compliance folder also contains market-specific
-                certifications, management-system certificates, and technical reports that can be supplied as part
-                of the project documentation pack.
-              </p>
-            </div>
-
-            <div className="credential-grid">
-              {additionalCredentials.map(([title, text]) => (
-                <article key={title} className="credential-card">
-                  <h3>{title}</h3>
-                  <p>{text}</p>
-                </article>
-              ))}
-            </div>
-          </div>
-        </section>
-
         <section className="section section--forest">
           <div ref={docsRef} className="docs-cta reveal">
             <div>
-              <h2>Request the documentation pack</h2>
+              <h2>Request certification documentation</h2>
               <p>
-                Certificates, declarations, and technical reports are available for professional review. Tell us
-                what product or project you are working on and we will assemble the relevant compliance package.
+                Declarations of Performance, test reports, and chain-of-custody certificates are available for any
+                product in our range. Get in touch and we will provide the full documentation package for your
+                project.
               </p>
             </div>
             <div className="docs-cta__action">

@@ -4,49 +4,51 @@ import PageTitle from "../components/PageTitle";
 import { images } from "../data/siteContent";
 import { useReveal } from "../hooks/useReveal";
 
+const docsValue = "ETA \u00B7 FSC \u00B7 PEFC \u00B7 Greenguard \u00B7 CATAS";
+
 const standardSpecs = [
-  ["Thickness", "0.6mm – 1.5mm"],
-  ["Formats", "Standard (1300×3050mm) · Large Format (1300×4200mm)"],
-  ["Finishes", "Matt · Gloss · Soft Touch · Brushed · Textured · Metallic"],
-  ["Decor range", "Solids · Wood · Stone · Concrete · Abstract"],
-  ["Applications", "Furniture · Shopfitting · Partitioning · Cabinetry"],
-  ["Documentation", "ETA · CE · DoP · FSC · GREENGUARD Gold · EPD · HPD + more"],
+  ["Thickness", "0.6mm - 1.5mm"],
+  ["Formats", "Standard (1300x3050mm) \u00B7 Large Format (1300x4200mm)"],
+  ["Finishes", "Matt \u00B7 Gloss \u00B7 Soft Touch \u00B7 Brushed \u00B7 Textured \u00B7 Metallic"],
+  ["Decor range", "Solids \u00B7 Wood \u00B7 Stone \u00B7 Concrete \u00B7 Abstract"],
+  ["Applications", "Furniture \u00B7 Shopfitting \u00B7 Partitioning \u00B7 Cabinetry"],
+  ["Documentation", docsValue],
   ["Standard", "EN 438"],
-  ["Supply options", "Warehouse (any quantity) · Full container (direct)"]
+  ["Supply options", "Warehouse (any quantity) \u00B7 Full container (direct)"]
 ];
 
 const premiumSpecs = [
-  ["Thickness", "3mm · 6mm · 12mm · 20mm"],
-  ["Sheet size", "760×2440mm · 760×3660mm"],
+  ["Thickness", "3mm \u00B7 6mm \u00B7 12mm \u00B7 20mm"],
+  ["Sheet size", "760x2440mm \u00B7 760x3660mm"],
   ["Surface", "100% Acrylic Solid Surface"],
-  ["Finishes", "Matt · Gloss · Anti-fingerprint"],
-  ["Documentation", "ETA · CE · DoP · FSC · GREENGUARD Gold · EPD · HPD + more"],
+  ["Finishes", "Matt \u00B7 Gloss \u00B7 Anti-fingerprint"],
+  ["Documentation", docsValue],
   ["Fire rating", "Fire Retardant Grade available"],
-  ["Special properties", "Thermoformable · Non-porous · Repairable · Imperceptible joints · Food-contact safe"],
-  ["Supply options", "Warehouse (any quantity) · Full container (direct)"]
+  ["Special properties", "Thermoformable \u00B7 Non-porous \u00B7 Repairable \u00B7 Imperceptible joints \u00B7 Food-contact safe"],
+  ["Supply options", "Warehouse (any quantity) \u00B7 Full container (direct)"]
 ];
 
 const compactSpecs = [
-  ["Thickness", "2mm · 3mm · 4mm · 6mm · 10mm · 13mm · 20mm · 25mm+"],
-  ["Formats", "Standard · Large Format"],
-  ["Grades", "Interior · Exterior (UV-stable) · Anti-bacterial · Marine"],
-  ["Finishes", "Matt · Gloss · Satin · Metallic · Textured"],
+  ["Thickness", "2mm \u00B7 3mm \u00B7 4mm \u00B7 6mm \u00B7 10mm \u00B7 13mm \u00B7 20mm \u00B7 25mm+"],
+  ["Formats", "Standard \u00B7 Large Format"],
+  ["Grades", "Interior \u00B7 Exterior (UV-stable) \u00B7 Anti-bacterial \u00B7 Marine"],
+  ["Finishes", "Matt \u00B7 Gloss \u00B7 Satin \u00B7 Metallic \u00B7 Textured"],
   ["Edge", "Homogenous through-colour core"],
-  ["Applications", "Washrooms · Lockers · Worktops · Exterior Cladding · Marine"],
-  ["Documentation", "ETA · CE · DoP · FSC · GREENGUARD Gold · EPD · HPD + more"],
+  ["Applications", "Washrooms \u00B7 Lockers \u00B7 Worktops \u00B7 Exterior Cladding \u00B7 Marine"],
+  ["Documentation", docsValue],
   ["Standard", "EN 438-6"],
-  ["Supply options", "Warehouse (any quantity) · Full container (direct)"]
+  ["Supply options", "Warehouse (any quantity) \u00B7 Full container (direct)"]
 ];
 
 const comparisonRows = [
-  ["Self-supporting", "✗", "✗", "✓"],
-  ["Exterior grade", "✗", "✗", "✓"],
-  ["Thermoformable", "✗", "✓", "✗"],
-  ["Anti-bacterial", "Optional", "✓", "✓"],
-  ["ETA Certified", "✓", "✓", "✓"],
-  ["Food-contact safe", "✗", "✓", "✗"],
-  ["Moisture resistant", "Low–Medium", "High", "Very High"],
-  ["Any quantity", "✓", "✓", "✓"],
+  ["Self-supporting", "\u2717", "\u2717", "\u2713"],
+  ["Exterior grade", "\u2717", "\u2717", "\u2713"],
+  ["Thermoformable", "\u2717", "\u2713", "\u2717"],
+  ["Anti-bacterial", "Optional", "\u2713", "\u2713"],
+  ["ETA Certified", "\u2713", "\u2713", "\u2713"],
+  ["Food-contact safe", "\u2717", "\u2713", "\u2717"],
+  ["Moisture resistant", "Low-Medium", "High", "Very High"],
+  ["Any quantity", "\u2713", "\u2713", "\u2713"],
   ["Best for", "Furniture/Shopfit", "Hi-spec interiors", "Washrooms/Exterior"]
 ];
 
@@ -91,7 +93,7 @@ function Products() {
             <p className="page-hero__breadcrumb">Home / Products</p>
             <h1>Our Products</h1>
             <p>
-              Professionally documented HPL and compact laminate - warehoused in Italy, available globally.
+              ETA-certified HPL and compact laminate - fully documented, warehoused in Italy, available globally.
             </p>
           </div>
         </section>
@@ -99,15 +101,15 @@ function Products() {
         <section ref={statsRef} className="stats-bar reveal">
           <div className="stats-bar__item">
             <strong>Three product lines</strong>
-            <span>HPL Standard · HPL Premium · Compact</span>
+            <span>HPL Standard \u00B7 HPL Premium \u00B7 Compact</span>
           </div>
           <div className="stats-bar__item">
             <strong>Any quantity</strong>
             <span>Warehouse stock or full container. Italy hub.</span>
           </div>
           <div className="stats-bar__item">
-            <strong>19 documented items</strong>
-            <span>Certificates, declarations, and test reports available on request</span>
+            <strong>5 certifications</strong>
+            <span>ETA \u00B7 FSC \u00B7 PEFC \u00B7 Greenguard \u00B7 CATAS - every product</span>
           </div>
         </section>
 
@@ -126,8 +128,8 @@ function Products() {
             <h2>HPL Standard</h2>
             <p>
               General-purpose high-pressure laminate manufactured to European standards. Available in a
-              comprehensive range of decors, finishes, and formats — from solids and woods to stones and concretes
-              — to meet the full range of professional specification demands.
+              comprehensive range of decors, finishes, and formats - from solids and woods to stones and concretes
+              - to meet the full range of professional specification demands.
             </p>
             <p>
               Suitable for furniture manufacturing, shopfitting, kitchen cabinetry, interior partitioning, and
@@ -156,7 +158,7 @@ function Products() {
             <p>
               Our premium HPL product combines a 100% acrylic solid surface layer with an HPL substrate for
               exceptional performance. The result is a surface that combines the dimensional stability and
-              workability of laminate with the seamless, non-porous properties of solid surface — UV-stable,
+              workability of laminate with the seamless, non-porous properties of solid surface - UV-stable,
               scratch-resistant, food-contact safe, anti-bacterial, and thermoformable.
             </p>
             <p>
@@ -204,7 +206,7 @@ function Products() {
             <h2>Compact Laminate</h2>
             <p>
               A self-supporting structural panel manufactured entirely from resin-impregnated kraft paper,
-              compressed under extreme heat and pressure. Unlike standard HPL — which bonds to a substrate board —
+              compressed under extreme heat and pressure. Unlike standard HPL - which bonds to a substrate board -
               compact laminate is its own substrate. The result is superior mechanical performance, dimensional
               stability, and resistance to moisture, chemicals, and impact.
             </p>
@@ -243,9 +245,9 @@ function Products() {
                   {comparisonRows.map((row) => (
                     <tr key={row[0]}>
                       <td>{row[0]}</td>
-                      <td className={row[1] === "✓" ? "is-positive" : row[1] === "✗" ? "is-negative" : ""}>{row[1]}</td>
-                      <td className={row[2] === "✓" ? "is-positive" : row[2] === "✗" ? "is-negative" : ""}>{row[2]}</td>
-                      <td className={row[3] === "✓" ? "is-positive" : row[3] === "✗" ? "is-negative" : ""}>{row[3]}</td>
+                      <td className={row[1] === "\u2713" ? "is-positive" : row[1] === "\u2717" ? "is-negative" : ""}>{row[1]}</td>
+                      <td className={row[2] === "\u2713" ? "is-positive" : row[2] === "\u2717" ? "is-negative" : ""}>{row[2]}</td>
+                      <td className={row[3] === "\u2713" ? "is-positive" : row[3] === "\u2717" ? "is-negative" : ""}>{row[3]}</td>
                     </tr>
                   ))}
                 </tbody>

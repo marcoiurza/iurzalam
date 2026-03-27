@@ -1,29 +1,39 @@
 import { useEffect, useRef } from "react";
 
-export function useReveal(threshold = 0.15) {
+export function useReveal(threshold = 0.05) {
   const ref = useRef(null);
 
   useEffect(() => {
-    const element = ref.current;
-
-    if (!element) {
+    const el = ref.current;
+    if (!el) {
       return undefined;
     }
 
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          element.classList.add("visible");
-          observer.disconnect();
-        }
+    const rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight && rect.bottom > 0) {
+      el.classList.add("visible");
+      return undefined;
+    }
+
+    const obs = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            obs.unobserve(entry.target);
+          }
+        });
       },
-      { threshold }
+      {
+        threshold,
+        rootMargin: "0px 0px -40px 0px"
+      }
     );
 
-    observer.observe(element);
+    obs.observe(el);
 
-    return () => observer.disconnect();
-  }, [threshold]);
+    return () => obs.disconnect();
+  }, []);
 
   return ref;
 }
