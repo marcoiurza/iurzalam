@@ -221,7 +221,7 @@ function Home() {
                 <div
                   key={country.country}
                   className="country-visual-card"
-                  style={{ backgroundImage: `url(${images.EUROPE_CITY})` }}
+                  style={{ backgroundImage: `url(${country.image})` }}
                 >
                   <div className="country-visual-card__overlay" />
                   <span className="country-visual-card__label">
