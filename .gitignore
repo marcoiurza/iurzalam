@@ -10,3 +10,6 @@ yarn-error.log*
 pnpm-debug.log*
 .idea/
 .vscode/
+
+.vercel
+vite.config.js.timestamp-*.mjs
