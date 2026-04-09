@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 import PageTitle from "../components/PageTitle";
 import { CheckIcon, ClockIcon, MailIcon, PinIcon } from "../components/Icons";
+import { siteMeta } from "../data/siteContent";
 import { useReveal } from "../hooks/useReveal";
 
 const countryOptions = ["United Kingdom", "Netherlands", "Belgium", "Poland", "Germany", "Switzerland", "Italy", "Other"];
@@ -28,7 +29,11 @@ function Contact() {
 
   return (
     <>
-      <PageTitle title="Contact · IurzaLam" />
+      <PageTitle
+        title="Contact"
+        description="Contact Vertex Laminati for specification packs, certification documentation, warehouse supply planning, or direct-container enquiries."
+        path="/contact"
+      />
 
       <main>
         <section className="contact-hero">
@@ -36,18 +41,17 @@ function Contact() {
             <h1>
               Let&apos;s <em>talk.</em>
             </h1>
-            <p>We respond to all professional enquiries within one business day.</p>
+            <p>We respond to professional enquiries within one business day.</p>
           </div>
         </section>
 
         <section className="section section--stone">
           <div ref={layoutRef} className="contact-layout reveal">
             <div className="contact-layout__copy">
-              <h2>Get in touch</h2>
+              <h2>Contact the commercial team</h2>
               <p>
-                Whether you are looking to discuss a supply arrangement, request certification documentation,
-                explore logistics options, or simply understand what IurzaLam can offer — we would like to hear
-                from you.
+                Whether you want to discuss a stocking arrangement, request documentation, or map the right product
+                line for your market, Vertex Laminati is set up to support distributor and fabrication-led enquiries.
               </p>
 
               <div className="contact-blocks">
@@ -56,8 +60,8 @@ function Contact() {
                     <MailIcon />
                   </div>
                   <div>
-                    <strong>info@iurzalam.com</strong>
-                    <span>Primary contact</span>
+                    <strong>{siteMeta.email}</strong>
+                    <span>Commercial desk</span>
                   </div>
                 </div>
 
@@ -66,8 +70,8 @@ function Contact() {
                     <PinIcon />
                   </div>
                   <div>
-                    <strong>London, UK · Italy warehouse</strong>
-                    <span>European operations hub</span>
+                    <strong>{siteMeta.office}</strong>
+                    <span>{siteMeta.logisticsHub}</span>
                   </div>
                 </div>
 
@@ -76,15 +80,15 @@ function Contact() {
                     <ClockIcon />
                   </div>
                   <div>
-                    <strong>Within one business day</strong>
+                    <strong>{siteMeta.responseTime}</strong>
                     <span>For all professional enquiries</span>
                   </div>
                 </div>
               </div>
 
               <div className="contact-note">
-                We supply fabricators, distributors, main contractors, and joinery manufacturers. We do not supply
-                to end consumers or private individuals.
+                We supply distributors, fabricators, joinery manufacturers, and project-led commercial buyers. The
+                site is not intended for consumer retail sales.
               </div>
             </div>
 
@@ -169,8 +173,8 @@ function Contact() {
                     </button>
                   </form>
                   <p className="contact-form__privacy">
-                    Your information is processed in accordance with GDPR. We do not share data with third
-                    parties.
+                    Your information is processed in line with GDPR principles and used only to respond to your
+                    enquiry.
                   </p>
                 </>
               ) : (

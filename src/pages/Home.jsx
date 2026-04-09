@@ -8,57 +8,57 @@ import { useReveal } from "../hooks/useReveal";
 const valueCards = [
   {
     number: "01",
-    title: "Fully Certified",
-    body: "Our range carries ETA, FSC, PEFC, Greenguard, and CATAS certification - the complete set of approvals required by European specification authorities, public procurement frameworks, sustainability assessors, and health and safety standards. Every product. No exceptions.",
+    title: "Certification-Led Range",
+    body: "Vertex Laminati products are positioned around the approvals Europe actually asks for: ETA, FSC, PEFC, Greenguard Gold, and CATAS. Documentation is ready for specification teams, procurement desks, and compliance reviews.",
     icon: <CheckIcon />,
     link: "/certifications"
   },
   {
     number: "02",
-    title: "Warehoused in Italy. Any Quantity.",
-    body: "Our Italian distribution hub means we can supply any buyer at any order size - from single pallet to full container. Flexible quantities for smaller orders, full-container direct shipments for high-volume buyers. One supplier, one relationship, whatever your scale.",
+    title: "Italy-Based, Flexible Quantities",
+    body: "Our warehouse programme supports mixed pallets, recurring replenishment, and direct containers for higher-volume accounts. One commercial relationship, whether you buy trial quantities or full seasonal stock.",
     icon: <WarehouseIcon />,
     link: "/logistics"
   },
   {
     number: "03",
-    title: "Three Generations of Trade Knowledge",
-    body: "Three generations of relationships, product depth, and market understanding built since 1968. The knowledge accumulated over decades of active trade in the European laminate market is not reproducible by a conventional trading company.",
+    title: "Built Since 1968",
+    body: "Our founding team brings more than 55 years of experience in European laminate distribution, built since 1968 across demanding distributor and fabricator markets.",
     icon: <HeritageIcon />,
     link: "/about"
   }
 ];
 
 const logisticsFacts = [
-  ["Any quantity", "From single pallet to full container"],
-  ["Full container option", "Direct shipment for high-volume buyers"],
-  ["European focus", "Italy hub - optimised for EU, UK, and CH delivery"],
-  ["Global supply", "We ship to buyers worldwide"]
+  ["Any quantity", "From single-pallet call-offs to full-container programmes"],
+  ["Italy warehouse", "Structured for fast European replenishment"],
+  ["Commercial flexibility", "Mixed orders, rolling supply, and project scheduling"],
+  ["Broader reach", "Selected global markets served through direct shipment"]
 ];
 
 const productCards = [
   {
     image: images.KITCHEN_1,
-    alt: "Kitchen interior featuring HPL Standard decorative laminate surfaces",
+    alt: "Kitchen interior featuring Vertex HPL Standard decorative laminate surfaces",
     number: "01",
-    title: "HPL Standard",
-    body: "General-purpose HPL in a wide range of decors and finishes. For furniture manufacturing, shopfitting, and interior partitioning.",
+    title: "Vertex HPL Standard",
+    body: "General-purpose decorative laminate for cabinetry, joinery, retail fit-out, and interior wall systems.",
     pills: ["Matt", "Gloss", "Soft Touch", "Textured", "Wood Decor", "Solid Colour"]
   },
   {
     image: images.COMMERCIAL_2,
-    alt: "Commercial interior counter finished in HPL Premium decorative surface",
+    alt: "Commercial interior counter finished in Vertex HPL Premium decorative surface",
     number: "02",
-    title: "HPL Premium",
-    body: "100% acrylic solid surface on HPL substrate. UV-stable, scratch-resistant, and thermoformable. The specification choice for high-end kitchens, bathrooms, and commercial counters.",
+    title: "Vertex HPL Premium",
+    body: "Acrylic-faced specification surface for projects that need a more seamless, higher-performance finish.",
     pills: ["Matt", "Gloss", "Anti-fingerprint", "Marble", "Stone", "Solid Colour"]
   },
   {
     image: images.WASHROOM_1,
     alt: "Compact laminate used for washroom cubicles in commercial settings",
     number: "03",
-    title: "Compact Laminate",
-    body: "Self-supporting panel with superior moisture, impact, and chemical resistance. Interior and exterior-grade formulations for washrooms, lockers, cladding, and beyond.",
+    title: "Vertex Compact",
+    body: "Self-supporting compact laminate for washrooms, lockers, cladding, and other moisture-critical applications.",
     pills: ["Interior Grade", "Exterior Grade", "Anti-bacterial", "Marine", "Cladding"]
   }
 ];
@@ -74,26 +74,30 @@ function Home() {
 
   return (
     <>
-      <PageTitle title="IurzaLam - Global HPL & Compact Laminate Distribution" />
+      <PageTitle
+        title="European HPL & Compact Laminate Distribution"
+        description="Vertex Laminati supplies specification-grade HPL and compact laminate surfaces across Europe, backed by Italy-based logistics and certification-ready documentation."
+        path="/"
+      />
 
       <main>
         <section className="hero hero--home" style={{ backgroundImage: `url(${images.HERO_MAIN})` }}>
           <div className="hero__overlay hero__overlay--home" />
           <div className="hero__content hero__content--home">
-            <p className="hero-eyebrow">EST. 1968 &middot; GLOBAL DISTRIBUTION</p>
+            <p className="hero-eyebrow">VERTEX LAMINATI · BUILT SINCE 1968</p>
             <h1 className="hero-h1">
-              Where specification meets <em>certified supply.</em>
+              Specification-grade laminates for <em>European distribution.</em>
             </h1>
             <p className="hero-sub">
-              Three generations of European laminate expertise. Three product lines, fully certified for every
-              major market standard. Warehoused in Italy. Delivered anywhere.
+              Vertex Laminati supplies a proprietary HPL and compact laminate range backed by ETA, FSC, PEFC,
+              Greenguard Gold, and CATAS credentials, stocked through Italy and delivered across Europe.
             </p>
             <div className="hero-ctas">
               <Link className="btn-primary" to="/contact">
                 Request a Quote
               </Link>
               <Link className="btn-ghost" to="/products">
-                Explore Products &#8594;
+                Explore the Range
               </Link>
             </div>
           </div>
@@ -104,7 +108,7 @@ function Home() {
         </section>
 
         <section className="cert-strip">
-          <div className="cert-strip__label">Fully certified</div>
+          <div className="cert-strip__label">Certification suite</div>
           {certificationItems.map((item) => (
             <Link key={item.abbr} className="cert-strip__item" to="/certifications">
               <span className="cert-strip__name">{item.abbr}</span>
@@ -118,7 +122,7 @@ function Home() {
             <div className="section-header section-header--split">
               <div>
                 <p className="section-label">APPLICATIONS</p>
-                <h2 className="section-title">Surfaces in use across the world</h2>
+                <h2 className="section-title">Surfaces built for real project use</h2>
               </div>
               <Link className="btn-text" to="/products">
                 View all products
@@ -145,12 +149,11 @@ function Home() {
         <section className="section section--white">
           <div ref={valueRef} className="reveal">
             <div className="section-header section-header--centered">
-              <p className="section-label">WHY IURZALAM</p>
-              <h2 className="section-title">The specification-grade laminate distributor the market needed</h2>
+              <p className="section-label">WHY VERTEX</p>
+              <h2 className="section-title">Independent market positioning, built for long-term supply.</h2>
               <p className="section-subtitle">
-                We are not a catalogue distributor. We are a family-run specialist with decades of institutional
-                knowledge, every certification required by the European market, and a logistics infrastructure
-                designed to serve any buyer at any scale.
+                Vertex Laminati is positioned as an independent European HPL distributor with deep industry heritage,
+                proprietary public-facing branding, and the logistics discipline required by serious B2B buyers.
               </p>
             </div>
 
@@ -175,11 +178,10 @@ function Home() {
             <div className="logistics-feature__image-overlay" />
             <div className="logistics-feature__copy">
               <p className="section-label section-label--light">LOGISTICS</p>
-              <h2>Italy warehouse. Global reach.</h2>
+              <h2>Italy warehouse. Europe-first supply.</h2>
               <p>
-                Our central distribution hub in Italy means shorter lead times for European buyers, flexible order
-                quantities, and direct container options for high-volume accounts. We supply fabricators,
-                distributors, and contractors anywhere in the world.
+                Our logistics model is structured around European replenishment: shorter lead times, flexible order
+                sizes, and direct container options for larger accounts that want margin-efficient scale.
               </p>
             </div>
           </div>
@@ -196,12 +198,12 @@ function Home() {
         <section className="section section--stone">
           <div ref={reachRef} className="reach-grid reveal">
             <div className="reach-grid__content">
-              <p className="section-label">OUR REACH</p>
-              <h2 className="section-title">Europe first. Everywhere else too.</h2>
+              <p className="section-label">MARKET COVERAGE</p>
+              <h2 className="section-title">Europe first. Export-ready when needed.</h2>
               <p className="section-copy">
-                Our primary focus is Europe - where our family has operated for decades and where our certifications
-                are most directly relevant to specification. But our logistics infrastructure means we can supply
-                buyers anywhere in the world. If you need IurzaLam products, we can get them to you.
+                Vertex Laminati is built around Europe’s distributor and fabricator markets, with active commercial
+                focus across the UK, Benelux, DACH, Poland, and Switzerland. Selected global accounts are supported
+                through direct shipment structures where the economics make sense.
               </p>
 
               <div className="market-list">
@@ -237,10 +239,10 @@ function Home() {
           <div ref={quoteRef} className="reveal heritage-quote__inner">
             <span className="heritage-quote__mark">&ldquo;</span>
             <blockquote>
-              Three generations of the Iurza family have traded European decorative laminates since 1968. The
-              knowledge accumulated first-hand over decades is what turns supply into genuine market judgement.
+              Our founding team brings over 55 years of experience in European laminate distribution, built since
+              1968.
             </blockquote>
-            <p>&mdash; Three generations in European decorative surfaces &middot; Est. 1968</p>
+            <p>Institutional market knowledge · Europe-focused commercial discipline · Built since 1968</p>
           </div>
         </section>
 
@@ -248,10 +250,10 @@ function Home() {
           <div ref={productRef} className="reveal">
             <div className="section-header section-header--narrow">
               <p className="section-label">OUR RANGE</p>
-              <h2 className="section-title">Three product lines. Every specification covered.</h2>
+              <h2 className="section-title">Three product lines. One clear specification offer.</h2>
               <p className="section-subtitle section-subtitle--left">
-                From general-purpose HPL to self-supporting exterior compact laminate - certified for every major
-                European market standard, warehoused in Italy, available at any quantity.
+                From general-purpose HPL to self-supporting compact laminate, the Vertex range is positioned for
+                distributor sales, project supply, and repeat fabrication programmes across Europe.
               </p>
             </div>
 
@@ -260,7 +262,7 @@ function Home() {
                 <article key={card.title} className="product-preview-card">
                   <div className="product-preview-card__media">
                     <img src={card.image} alt={card.alt} loading="lazy" />
-                    <span className="product-preview-card__badge">ETA Certified</span>
+                    <span className="product-preview-card__badge">Documentation Ready</span>
                   </div>
                   <div className="product-preview-card__body">
                     <span className="product-preview-card__number">{card.number}</span>
@@ -286,17 +288,17 @@ function Home() {
         <section ref={ctaRef} className="final-cta reveal">
           <div className="final-cta__bg" style={{ backgroundImage: `url(${images.EXTERIOR_1})` }} />
           <div className="final-cta__content">
-            <h2>Ready to discuss your requirements?</h2>
+            <h2>Ready to plan your range, quantities, or market rollout?</h2>
             <p>
-              We supply fabricators, distributors, and contractors at any scale - from flexible warehouse
-              quantities to full-container direct shipments. Certification documentation available on request.
+              We support distributors, fabricators, and project-led buyers with range guidance, certification packs,
+              and logistics options sized to the commercial opportunity.
             </p>
             <div className="final-cta__actions">
               <Link className="btn-primary" to="/contact">
-                Contact Us
+                Speak to the Team
               </Link>
-              <Link className="btn-ghost" to="/contact">
-                Download Spec Sheets
+              <Link className="btn-ghost" to="/certifications">
+                Review Certifications
               </Link>
             </div>
           </div>

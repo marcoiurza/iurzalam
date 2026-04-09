@@ -3,53 +3,57 @@ import { images } from "../data/siteContent";
 import { useReveal } from "../hooks/useReveal";
 
 const timeline = [
-  [
-    "1968",
-    "The Iurza family enters European laminate distribution - among the first to import laminates from India into Europe."
-  ],
-  [
-    "Second generation",
-    "The network expands across Europe. Direct commercial relationships established with distributors and fabricators across Switzerland, Germany, and the Benelux."
-  ],
-  [
-    "Third generation",
-    "IurzaLam is founded to bring three generations of knowledge, relationships, and product expertise to a modern, scalable distribution business."
-  ]
+  ["1968", "Commercial roots established in European laminate distribution."],
+  ["1990s-2010s", "Relationships expanded across Benelux, DACH, Italy, and Poland through active B2B market work."],
+  ["Today", "Vertex Laminati operates as an independent European brand with proprietary public positioning and flexible supply infrastructure."]
 ];
 
 const businessCards = [
   {
-    title: "Product Ownership",
-    body: "We sell our products under the IurzaLam name. Our range is fully certified, independently tested, and backed by complete European documentation. Not sourced on demand - curated, specified, and owned."
+    title: "Independent Brand Positioning",
+    body: "Vertex Laminati presents its range as a proprietary market offer. That keeps the commercial proposition clean, protects long-term flexibility, and avoids public dependence on any one named source."
   },
   {
-    title: "Certification-Led",
-    body: "We built our product range around certifications, not despite them. ETA, FSC, PEFC, Greenguard, CATAS - every standard required by the European market. Because a product you cannot specify is a product you cannot sell."
+    title: "Certification-Led Commercial Model",
+    body: "The range is framed around the approvals specifiers and procurement teams expect. Documentation is part of the offer, not a separate afterthought."
   },
   {
-    title: "Logistics Infrastructure",
-    body: "Italy warehouse for flexible quantities. Full container option for volume buyers. The same products, the same certifications, the same documentation - whether you are ordering a single pallet or a full container."
+    title: "Europe-First Distribution",
+    body: "The operating model is designed around European replenishment discipline, with Italy-based stock support and direct-container options for accounts that need scale."
+  }
+];
+
+const teamCards = [
+  {
+    title: "Founder & CEO",
+    body: "Leads commercial strategy, supplier coordination, and European market development, with more than a decade of international B2B distribution experience."
+  },
+  {
+    title: "Industry Senior Advisor",
+    body: "Brings over 30 years in European laminate distribution, with deep relationships across Benelux, Poland, Italy, and broader specification-led channels."
+  },
+  {
+    title: "Operations & Logistics",
+    body: "Coordinates warehouse planning, shipment structures, and documentation flow to keep repeat supply reliable across multiple destination markets."
   }
 ];
 
 const companyInfo = [
-  ["Registered name", "Iurza Decorative Surfaces Ltd"],
-  ["Trading as", "IurzaLam"],
-  ["Company number", "16980223"],
-  ["Jurisdiction", "England & Wales"],
-  ["Registered office", "71-75 Shelton Street, London WC2H 9JQ"],
-  ["SIC code", "46730 \u2014 Wholesale of wood, construction materials"],
-  ["Logistics hub", "Italy"],
-  ["Coverage", "Europe (primary) \u00B7 Global (full container)"]
+  ["Public brand", "Vertex Laminati"],
+  ["Legal entity", "Vertex Laminati SA"],
+  ["Commercial office", "Chiasso, Ticino, Switzerland"],
+  ["Distribution model", "Italy stock programme · Full container direct"],
+  ["Primary coverage", "United Kingdom · Benelux · Germany · Poland · Switzerland"],
+  ["Commercial focus", "Distributors · Fabricators · Joinery manufacturers · Project-led buyers"]
 ];
 
 const countryCards = [
-  ["\uD83C\uDDEC\uD83C\uDDE7", "United Kingdom", "Active"],
-  ["\uD83C\uDDF3\uD83C\uDDF1", "Netherlands", "Active"],
-  ["\uD83C\uDDE7\uD83C\uDDEA", "Belgium", "Active"],
-  ["\uD83C\uDDF5\uD83C\uDDF1", "Poland", "Active"],
-  ["\uD83C\uDDE9\uD83C\uDDEA", "Germany", "Active"],
-  ["\uD83C\uDDE8\uD83C\uDDED", "Switzerland", "Active"]
+  ["GB", "United Kingdom", "Active"],
+  ["NL", "Netherlands", "Active"],
+  ["BE", "Belgium", "Active"],
+  ["PL", "Poland", "Active"],
+  ["DE", "Germany", "Active"],
+  ["CH", "Switzerland", "Active"]
 ];
 
 function About() {
@@ -59,7 +63,11 @@ function About() {
 
   return (
     <>
-      <PageTitle title="About - IurzaLam" />
+      <PageTitle
+        title="About"
+        description="Vertex Laminati is an independent European laminate distributor built on industry roots dating back to 1968, with role-based leadership and Europe-first supply."
+        path="/about"
+      />
 
       <main>
         <section className="page-hero" style={{ backgroundImage: `url(${images.HERITAGE})` }}>
@@ -67,7 +75,7 @@ function About() {
           <div className="page-hero__content page-hero__content--mid">
             <p className="section-label section-label--light">OUR STORY</p>
             <h1>
-              Three generations. One <em>industry.</em>
+              Industry roots, modern <em>positioning.</em>
             </h1>
           </div>
         </section>
@@ -85,9 +93,8 @@ function About() {
             <aside className="pull-quote-card">
               <span className="pull-quote-card__mark">&ldquo;</span>
               <blockquote>
-                The Iurza family has traded European decorative laminates since 1968. Three generations of market
-                knowledge, supplier relationships, and specification expertise - built over decades, not assembled
-                for a launch.
+                Vertex Laminati is led by professionals with roots in European laminate distribution going back to
+                1968.
               </blockquote>
             </aside>
           </div>
@@ -96,7 +103,7 @@ function About() {
         <section className="section section--stone">
           <div ref={businessRef} className="reveal">
             <p className="section-label">THE BUSINESS</p>
-            <h2 className="section-title">Built differently from the start.</h2>
+            <h2 className="section-title">Built for durable market credibility.</h2>
             <div className="business-grid">
               {businessCards.map((card) => (
                 <article key={card.title} className="business-card">
@@ -111,11 +118,10 @@ function About() {
         <section className="section section--charcoal">
           <div ref={rootsRef} className="european-roots reveal">
             <div>
-              <h2>The European market is in our DNA.</h2>
+              <h2>Role-based leadership, Europe-focused execution.</h2>
               <p>
-                Since 1968, the family trade has been shaped around European buyer expectations: specification
-                standards, procurement processes, repeat relationships, and documentation discipline. IurzaLam was
-                built to formalise that knowledge into a modern business with owned products and dependable supply.
+                The public-facing team profile is deliberately role-led. Buyers work with Vertex Laminati as a
+                professional commercial platform, not as a personality-led or supplier-led resale business.
               </p>
             </div>
             <div className="dark-country-grid">
@@ -133,8 +139,23 @@ function About() {
 
         <section className="section section--white">
           <div>
-            <p className="section-label">COMPANY INFORMATION</p>
-            <h2 className="section-title">Iurza Decorative Surfaces Ltd</h2>
+            <p className="section-label">LEADERSHIP ROLES</p>
+            <h2 className="section-title">Public team profile</h2>
+            <div className="credential-grid">
+              {teamCards.map((card) => (
+                <article key={card.title} className="credential-card">
+                  <h3>{card.title}</h3>
+                  <p>{card.body}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="section section--stone">
+          <div>
+            <p className="section-label">COMPANY PROFILE</p>
+            <h2 className="section-title">Vertex Laminati SA</h2>
             <div className="company-grid">
               {companyInfo.map(([label, value]) => (
                 <div key={label} className="company-grid__item">

@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
 
 import { navLinks } from "../data/siteContent";
+import BrandLogo from "./BrandLogo";
 import { CloseIcon, MenuIcon } from "./Icons";
 
 function Nav() {
@@ -10,7 +11,7 @@ function Nav() {
   const location = useLocation();
 
   useEffect(() => {
-    const handler = () => setScrolled(window.scrollY > 60);
+    const handler = () => setScrolled(window.scrollY > 24);
     handler();
     window.addEventListener("scroll", handler, { passive: true });
     return () => window.removeEventListener("scroll", handler);
@@ -32,7 +33,7 @@ function Nav() {
       <header className={`site-nav ${scrolled ? "is-scrolled" : ""}`}>
         <div className="site-nav__inner">
           <Link className="site-nav__brand" to="/">
-            IurzaLam
+            <BrandLogo compact />
           </Link>
 
           <nav className="site-nav__links" aria-label="Primary">
@@ -49,7 +50,7 @@ function Nav() {
 
           <div className="site-nav__actions">
             <Link className="btn-primary btn-primary--small" to="/contact">
-              Get in touch
+              Request a Quote
             </Link>
             <button
               className="site-nav__toggle"
@@ -67,7 +68,7 @@ function Nav() {
       <div className={`mobile-nav ${menuOpen ? "is-open" : ""}`} aria-hidden={!menuOpen}>
         <div className="mobile-nav__header">
           <Link className="mobile-nav__brand" to="/">
-            IurzaLam
+            <BrandLogo compact />
           </Link>
           <button
             className="mobile-nav__close"
@@ -85,7 +86,7 @@ function Nav() {
             </NavLink>
           ))}
           <Link className="btn-primary mobile-nav__cta" to="/contact">
-            Get in touch
+            Contact Sales
           </Link>
         </nav>
       </div>

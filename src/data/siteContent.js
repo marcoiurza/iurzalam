@@ -1,5 +1,19 @@
 const withQuery = (url, width) => `${url}?auto=format&fit=crop&w=${width}&q=85`;
 
+export const siteMeta = {
+  brandName: "Vertex Laminati",
+  legalName: "Vertex Laminati SA",
+  siteUrl: "https://vertexlaminati.com",
+  defaultTitle: "Vertex Laminati | European HPL & Compact Laminate Distribution",
+  defaultDescription:
+    "Vertex Laminati is a European distributor of specification-grade HPL and compact laminate surfaces, built since 1968 and supplied from Italy across Europe and selected global markets.",
+  email: "info@vertexlaminati.com",
+  office: "Chiasso, Ticino, Switzerland",
+  logisticsHub: "Northern Italy warehouse programme",
+  responseTime: "Within one business day",
+  ogImage: "/vertex-logo.png"
+};
+
 export const images = {
   HERO_MAIN: withQuery("https://images.unsplash.com/photo-1600585154340-be6161a56a0c", 2200),
   KITCHEN_1: withQuery("https://images.unsplash.com/photo-1556909172-54557c7e4fb7", 1600),
@@ -39,80 +53,80 @@ export const navLinks = [
 
 export const certificationItems = [
   { abbr: "ETA", desc: "European Technical Assessment" },
-  { abbr: "FSC", desc: "Forest Stewardship Council" },
-  { abbr: "PEFC", desc: "Programme for Endorsement" },
-  { abbr: "Greenguard", desc: "UL Environment Certified" },
-  { abbr: "CATAS", desc: "Independent European Testing" }
+  { abbr: "FSC", desc: "Responsible sourcing" },
+  { abbr: "PEFC", desc: "Certified chain of custody" },
+  { abbr: "Greenguard", desc: "Low-emission interiors" },
+  { abbr: "CATAS", desc: "Independent performance testing" }
 ];
 
 export const homeApplications = [
   {
     image: images.KITCHEN_2,
     title: "Kitchen Cabinetry",
-    desc: "HPL Standard \u00B7 Solid colour finish",
-    alt: "Kitchen cabinetry and work surfaces finished in solid colour decorative laminate"
+    desc: "Vertex HPL Standard · Solid and stone decors",
+    alt: "Kitchen cabinetry and work surfaces finished in decorative laminate"
   },
   {
     image: images.BATHROOM_2,
     title: "Bathroom Vanity",
-    desc: "HPL Premium \u00B7 Seamless surface look",
+    desc: "Vertex HPL Premium · Seamless specification finish",
     alt: "Bathroom vanity application using premium decorative laminate surfaces"
   },
   {
     image: images.OFFICE_2,
     title: "Office Wall Panelling",
-    desc: "HPL Standard \u00B7 Wood decor",
-    alt: "Office interior wall panelling and joinery in wood decor laminate"
+    desc: "Vertex HPL Standard · Workplace joinery",
+    alt: "Office interior wall panelling and joinery in decorative laminate"
   },
   {
     image: images.COMMERCIAL_2,
     title: "Commercial Counters",
-    desc: "HPL Premium \u00B7 High-traffic interiors",
-    alt: "Commercial counter application in a high-traffic hospitality interior"
+    desc: "Vertex HPL Premium · High-traffic interiors",
+    alt: "Commercial counter application in a hospitality interior"
   },
   {
     image: images.EXTERIOR_2,
     title: "Exterior Cladding",
-    desc: "Compact Laminate \u00B7 UV-stable",
+    desc: "Vertex Compact · UV-stable exterior grade",
     alt: "Exterior facade cladding built with compact laminate panels"
   },
   {
     image: images.WASHROOM_1,
     title: "Washroom Cubicles",
-    desc: "Compact Laminate \u00B7 High-humidity use",
+    desc: "Vertex Compact · Moisture-critical fit-out",
     alt: "Commercial washroom cubicle system built in compact laminate"
   },
   {
     image: images.MATERIAL_WOOD,
     title: "Woodgrain Decors",
-    desc: "Consistent visual depth for furniture and joinery manufacture",
+    desc: "Consistent visual depth for furniture and joinery",
     alt: "Woodgrain decorative laminate surface shown in close material detail"
   },
   {
     image: images.MATERIAL_STONE,
-    title: "Stone and abstract finishes",
-    desc: "Surface detail that communicates texture, consistency, and durability",
+    title: "Stone and Abstract Finishes",
+    desc: "Texture, consistency, and durability for specification teams",
     alt: "Stone-effect decorative laminate surface shown in close material detail"
   }
 ];
 
 export const reachMarkets = [
-  { flag: "\uD83C\uDDEC\uD83C\uDDE7", country: "United Kingdom", status: "Active" },
-  { flag: "\uD83C\uDDF3\uD83C\uDDF1", country: "Netherlands", status: "Active" },
-  { flag: "\uD83C\uDDE7\uD83C\uDDEA", country: "Belgium", status: "Active" },
-  { flag: "\uD83C\uDDF5\uD83C\uDDF1", country: "Poland", status: "Active" },
-  { flag: "\uD83C\uDDE9\uD83C\uDDEA", country: "Germany", status: "Active" },
-  { flag: "\uD83C\uDDE8\uD83C\uDDED", country: "Switzerland", status: "Active" },
-  { flag: "\uD83C\uDF0D", country: "Rest of World", status: "Supplied via full container or warehouse shipment" }
+  { flag: "GB", country: "United Kingdom", status: "Stock-supported" },
+  { flag: "NL", country: "Netherlands", status: "Distributor supply" },
+  { flag: "BE", country: "Belgium", status: "Project supply" },
+  { flag: "PL", country: "Poland", status: "Growth market" },
+  { flag: "DE", country: "Germany", status: "Specification-led sales" },
+  { flag: "CH", country: "Switzerland", status: "Commercial office alignment" },
+  { flag: "INTL", country: "Selected global markets", status: "Full container direct" }
 ];
 
 export const europeanCards = [
-  { flag: "\uD83C\uDDEC\uD83C\uDDE7", country: "United Kingdom", image: images.REACH_UK },
-  { flag: "\uD83C\uDDF3\uD83C\uDDF1", country: "Netherlands", image: images.REACH_NL },
-  { flag: "\uD83C\uDDE7\uD83C\uDDEA", country: "Belgium", image: images.REACH_BE },
-  { flag: "\uD83C\uDDF5\uD83C\uDDF1", country: "Poland", image: images.REACH_PL },
-  { flag: "\uD83C\uDDE9\uD83C\uDDEA", country: "Germany", image: images.REACH_DE },
-  { flag: "\uD83C\uDDE8\uD83C\uDDED", country: "Switzerland", image: images.REACH_CH }
+  { flag: "GB", country: "United Kingdom", image: images.REACH_UK },
+  { flag: "NL", country: "Netherlands", image: images.REACH_NL },
+  { flag: "BE", country: "Belgium", image: images.REACH_BE },
+  { flag: "PL", country: "Poland", image: images.REACH_PL },
+  { flag: "DE", country: "Germany", image: images.REACH_DE },
+  { flag: "CH", country: "Switzerland", image: images.REACH_CH }
 ];
 
-export const footerCerts = ["ETA", "FSC", "PEFC", "Greenguard", "CATAS"];
+export const footerCerts = ["ETA", "FSC", "PEFC", "Greenguard Gold", "CATAS"];
