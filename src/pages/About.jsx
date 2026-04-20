@@ -42,9 +42,9 @@ const companyInfo = [
   ["Public brand", "Vertex Laminati"],
   ["Legal entity", "Vertex Laminati SA"],
   ["Commercial office", "Chiasso, Ticino, Switzerland"],
-  ["Distribution model", "Italy stock programme · Full container direct"],
-  ["Primary coverage", "United Kingdom · Benelux · Germany · Poland · Switzerland"],
-  ["Commercial focus", "Distributors · Fabricators · Joinery manufacturers · Project-led buyers"]
+  ["Distribution model", "Italy stock programme - Full container direct"],
+  ["Primary coverage", "United Kingdom - Benelux - Germany - Poland - Switzerland"],
+  ["Commercial focus", "Distributors - Fabricators - Joinery manufacturers - Project-led buyers"]
 ];
 
 const countryCards = [

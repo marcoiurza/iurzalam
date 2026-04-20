@@ -169,7 +169,7 @@ function Contact() {
                     </div>
 
                     <button className="btn-primary contact-form__submit" type="submit">
-                      Send Message →
+                      {"Send Message ->"}
                     </button>
                   </form>
                   <p className="contact-form__privacy">

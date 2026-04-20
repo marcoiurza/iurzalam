@@ -84,7 +84,7 @@ function Home() {
         <section className="hero hero--home" style={{ backgroundImage: `url(${images.HERO_MAIN})` }}>
           <div className="hero__overlay hero__overlay--home" />
           <div className="hero__content hero__content--home">
-            <p className="hero-eyebrow">VERTEX LAMINATI · BUILT SINCE 1968</p>
+            <p className="hero-eyebrow">VERTEX LAMINATI - BUILT SINCE 1968</p>
             <h1 className="hero-h1">
               Specification-grade laminates for <em>European distribution.</em>
             </h1>
@@ -242,7 +242,7 @@ function Home() {
               Our founding team brings over 55 years of experience in European laminate distribution, built since
               1968.
             </blockquote>
-            <p>Institutional market knowledge · Europe-focused commercial discipline · Built since 1968</p>
+            <p>Institutional market knowledge - Europe-focused commercial discipline - Built since 1968</p>
           </div>
         </section>
 

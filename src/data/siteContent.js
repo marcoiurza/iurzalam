@@ -11,7 +11,7 @@ export const siteMeta = {
   office: "Chiasso, Ticino, Switzerland",
   logisticsHub: "Northern Italy warehouse programme",
   responseTime: "Within one business day",
-  ogImage: "/vertex-logo.png"
+  ogImage: "/vertex-logo.svg"
 };
 
 export const images = {
@@ -63,37 +63,37 @@ export const homeApplications = [
   {
     image: images.KITCHEN_2,
     title: "Kitchen Cabinetry",
-    desc: "Vertex HPL Standard · Solid and stone decors",
+    desc: "Vertex HPL Standard - Solid and stone decors",
     alt: "Kitchen cabinetry and work surfaces finished in decorative laminate"
   },
   {
     image: images.BATHROOM_2,
     title: "Bathroom Vanity",
-    desc: "Vertex HPL Premium · Seamless specification finish",
+    desc: "Vertex HPL Premium - Seamless specification finish",
     alt: "Bathroom vanity application using premium decorative laminate surfaces"
   },
   {
     image: images.OFFICE_2,
     title: "Office Wall Panelling",
-    desc: "Vertex HPL Standard · Workplace joinery",
+    desc: "Vertex HPL Standard - Workplace joinery",
     alt: "Office interior wall panelling and joinery in decorative laminate"
   },
   {
     image: images.COMMERCIAL_2,
     title: "Commercial Counters",
-    desc: "Vertex HPL Premium · High-traffic interiors",
+    desc: "Vertex HPL Premium - High-traffic interiors",
     alt: "Commercial counter application in a hospitality interior"
   },
   {
     image: images.EXTERIOR_2,
     title: "Exterior Cladding",
-    desc: "Vertex Compact · UV-stable exterior grade",
+    desc: "Vertex Compact - UV-stable exterior grade",
     alt: "Exterior facade cladding built with compact laminate panels"
   },
   {
     image: images.WASHROOM_1,
     title: "Washroom Cubicles",
-    desc: "Vertex Compact · Moisture-critical fit-out",
+    desc: "Vertex Compact - Moisture-critical fit-out",
     alt: "Commercial washroom cubicle system built in compact laminate"
   },
   {

@@ -56,7 +56,7 @@ function Footer() {
 
       <div className="site-footer__lower">
         <p>&copy; 2026 {siteMeta.legalName}. All rights reserved.</p>
-        <p>{siteMeta.office} · Distribution through Italy for Europe and selected global markets.</p>
+        <p>{siteMeta.office} - Distribution through Italy for Europe and selected global markets.</p>
       </div>
     </footer>
   );

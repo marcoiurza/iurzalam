@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Vertex Laminati SA</title>
+  <desc id="desc">Vertex Laminati Stack mark and Compasso wordmark.</desc>
+  <rect width="1200" height="630" fill="#EFE8DC"/>
+  <g transform="translate(216 226)">
+    <path d="M0 0 92 101 184 0 167 -13 92 70 17 -13Z" fill="#9A5A3C"/>
+    <path d="M0 34 92 135 184 34 167 21 92 104 17 21Z" fill="#1F1C18" opacity=".55"/>
+    <path d="M0 68 92 169 184 68 167 55 92 138 17 55Z" fill="#1F1C18"/>
+  </g>
+  <g fill="#1F1C18">
+    <text x="476" y="309" font-family="Fraunces, Didot, serif" font-size="112" font-weight="500" letter-spacing="24">VERTEX</text>
+    <line x1="480" y1="350" x2="856" y2="350" stroke="#1F1C18" stroke-width="2" opacity=".45"/>
+    <text x="505" y="407" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="32" font-weight="500" letter-spacing="16">LAMINATI SA</text>
+  </g>
+</svg>

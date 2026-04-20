@@ -1,12 +1,10 @@
 function BrandLogo({ compact = false }) {
   return (
     <span className={`brand-logo${compact ? " brand-logo--compact" : ""}`} aria-label="Vertex Laminati SA">
-      <svg className="brand-logo__mark" viewBox="0 0 84 72" aria-hidden="true">
-        <path d="M4 12 34 39l15-11L27 6 4 12Z" fill="#1D2A52" />
-        <path d="M27 6 49 28l31-22H51L27 6Z" fill="#D8AE3B" />
-        <path d="M11 29 37 50l16-11-23-18-19 8Z" fill="#FFFFFF" />
-        <path d="M7 45 35 69l41-35-18 3-23 19L7 45Z" fill="#1D2A52" />
-        <path d="M49 42 57 45l10-8-13 1-5 7Z" fill="#43AFC0" />
+      <svg className="brand-logo__mark" viewBox="0 0 64 64" aria-hidden="true">
+        <path className="brand-logo__mark-accent" d="M10 20 32 44 54 20 50 17 32 37 14 17Z" />
+        <path className="brand-logo__mark-mid" d="M10 28 32 52 54 28 50 25 32 45 14 25Z" />
+        <path className="brand-logo__mark-base" d="M10 36 32 60 54 36 50 33 32 53 14 33Z" />
       </svg>
       <span className="brand-logo__type">
         <span className="brand-logo__name">VERTEX</span>

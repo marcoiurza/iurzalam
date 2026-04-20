@@ -4,40 +4,40 @@ import PageTitle from "../components/PageTitle";
 import { images } from "../data/siteContent";
 import { useReveal } from "../hooks/useReveal";
 
-const docsValue = "ETA · FSC · PEFC · Greenguard Gold · CATAS";
+const docsValue = "ETA - FSC - PEFC - Greenguard Gold - CATAS";
 
 const standardSpecs = [
   ["Thickness", "0.6mm - 1.5mm"],
-  ["Formats", "1300x3050mm · 1300x4200mm"],
-  ["Finishes", "Matt · Gloss · Soft Touch · Brushed · Textured · Metallic"],
-  ["Decor range", "Solids · Wood · Stone · Concrete · Abstract"],
-  ["Applications", "Furniture · Shopfitting · Partitioning · Cabinetry"],
+  ["Formats", "1300x3050mm - 1300x4200mm"],
+  ["Finishes", "Matt - Gloss - Soft Touch - Brushed - Textured - Metallic"],
+  ["Decor range", "Solids - Wood - Stone - Concrete - Abstract"],
+  ["Applications", "Furniture - Shopfitting - Partitioning - Cabinetry"],
   ["Documentation", docsValue],
   ["Standard", "EN 438"],
-  ["Supply options", "Italy stock programme · Full container direct"]
+  ["Supply options", "Italy stock programme - Full container direct"]
 ];
 
 const premiumSpecs = [
-  ["Thickness", "3mm · 6mm · 12mm · 20mm"],
-  ["Sheet size", "760x2440mm · 760x3660mm"],
+  ["Thickness", "3mm - 6mm - 12mm - 20mm"],
+  ["Sheet size", "760x2440mm - 760x3660mm"],
   ["Surface", "100% acrylic solid surface on HPL substrate"],
-  ["Finishes", "Matt · Gloss · Anti-fingerprint"],
+  ["Finishes", "Matt - Gloss - Anti-fingerprint"],
   ["Documentation", docsValue],
   ["Fire rating", "Fire retardant grade available"],
-  ["Special properties", "Thermoformable · Non-porous · Repairable · Food-contact safe"],
-  ["Supply options", "Italy stock programme · Full container direct"]
+  ["Special properties", "Thermoformable - Non-porous - Repairable - Food-contact safe"],
+  ["Supply options", "Italy stock programme - Full container direct"]
 ];
 
 const compactSpecs = [
-  ["Thickness", "2mm · 3mm · 4mm · 6mm · 10mm · 13mm · 20mm · 25mm+"],
-  ["Formats", "Standard · Large format"],
-  ["Grades", "Interior · Exterior (UV-stable) · Anti-bacterial · Marine"],
-  ["Finishes", "Matt · Gloss · Satin · Metallic · Textured"],
+  ["Thickness", "2mm - 3mm - 4mm - 6mm - 10mm - 13mm - 20mm - 25mm+"],
+  ["Formats", "Standard - Large format"],
+  ["Grades", "Interior - Exterior (UV-stable) - Anti-bacterial - Marine"],
+  ["Finishes", "Matt - Gloss - Satin - Metallic - Textured"],
   ["Edge", "Homogenous through-colour core"],
-  ["Applications", "Washrooms · Lockers · Worktops · Exterior Cladding · Marine"],
+  ["Applications", "Washrooms - Lockers - Worktops - Exterior Cladding - Marine"],
   ["Documentation", docsValue],
   ["Standard", "EN 438-6"],
-  ["Supply options", "Italy stock programme · Full container direct"]
+  ["Supply options", "Italy stock programme - Full container direct"]
 ];
 
 const comparisonRows = [
@@ -105,7 +105,7 @@ function Products() {
         <section ref={statsRef} className="stats-bar reveal">
           <div className="stats-bar__item">
             <strong>Three product lines</strong>
-            <span>HPL Standard · HPL Premium · Compact</span>
+            <span>HPL Standard - HPL Premium - Compact</span>
           </div>
           <div className="stats-bar__item">
             <strong>Flexible volumes</strong>
@@ -113,7 +113,7 @@ function Products() {
           </div>
           <div className="stats-bar__item">
             <strong>Certification ready</strong>
-            <span>ETA · FSC · PEFC · Greenguard Gold · CATAS</span>
+            <span>ETA - FSC - PEFC - Greenguard Gold - CATAS</span>
           </div>
         </section>
 

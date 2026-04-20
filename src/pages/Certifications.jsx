@@ -14,7 +14,7 @@ const certifications = [
     bodyTwo:
       "For buyers serving public-sector, healthcare, education, or infrastructure programmes, ETA-backed documentation is table stakes. Vertex Laminati positions its range around that expectation from day one.",
     relevant:
-      "Public-sector specification · Main contractor procurement · Healthcare and education projects · CPR-sensitive construction packages",
+      "Public-sector specification - Main contractor procurement - Healthcare and education projects - CPR-sensitive construction packages",
     background: "stone"
   },
   {
@@ -26,7 +26,7 @@ const certifications = [
     bodyTwo:
       "For teams targeting BREEAM, LEED, DGNB, or internal ESG policies, FSC documentation supports responsible sourcing claims and helps keep approved material lists compliant.",
     relevant:
-      "BREEAM and LEED projects · Public procurement · ESG reporting · Responsible sourcing policies",
+      "BREEAM and LEED projects - Public procurement - ESG reporting - Responsible sourcing policies",
     background: "white"
   },
   {
@@ -38,7 +38,7 @@ const certifications = [
     bodyTwo:
       "For distributors and project buyers, PEFC strengthens the documentation package behind each shipment and helps satisfy sustainability checks without adding friction to commercial approval.",
     relevant:
-      "European public procurement · Sustainable building standards · Corporate responsibility reporting · Green material approvals",
+      "European public procurement - Sustainable building standards - Corporate responsibility reporting - Green material approvals",
     background: "stone"
   },
   {
@@ -50,7 +50,7 @@ const certifications = [
     bodyTwo:
       "That matters commercially because specifiers increasingly need proof that surfaces can sit inside sensitive-use environments without triggering extra material reviews or substitution requests.",
     relevant:
-      "Schools and educational facilities · Healthcare interiors · Childcare projects · Indoor air quality-led specifications",
+      "Schools and educational facilities - Healthcare interiors - Childcare projects - Indoor air quality-led specifications",
     background: "white"
   },
   {
@@ -62,7 +62,7 @@ const certifications = [
     bodyTwo:
       "For commercial teams, CATAS strengthens confidence during technical review and gives procurement departments a familiar third-party reference point when assessing specification risk.",
     relevant:
-      "Technical due diligence · EN-standard verification · Procurement review · Performance-led specifications",
+      "Technical due diligence - EN-standard verification - Procurement review - Performance-led specifications",
     background: "stone"
   }
 ];
