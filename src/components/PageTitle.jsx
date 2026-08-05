@@ -47,10 +47,12 @@ function PageTitle({ title, description, path = "/", image = siteMeta.ogImage, s
       url: siteMeta.siteUrl,
       logo: `${siteMeta.siteUrl}${siteMeta.logo}`,
       email: siteMeta.email,
+      taxID: siteMeta.uid,
+      vatID: `IT${siteMeta.italianVat}`,
       description: siteMeta.defaultDescription,
       address: {
         "@type": "PostalAddress",
-        streetAddress: "Via P.F. Mola 26",
+        streetAddress: "Via P. F. Mola 26",
         postalCode: "6877",
         addressLocality: "Coldrerio",
         addressRegion: "Ticino",

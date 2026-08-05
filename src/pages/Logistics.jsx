@@ -6,28 +6,28 @@ import { images } from "../data/siteContent";
 import { useReveal } from "../hooks/useReveal";
 
 const warehouseList = [
-  "Any quantity from single pallet",
-  "Consolidated and mixed-product orders",
-  "Flexible call-off arrangements",
-  "Italy-based and tuned for European delivery"
+  "Flexible quantities and mixed pallets",
+  "Full-truck and repeat replenishment programmes",
+  "Transparent lead times and coordinated call-offs",
+  "Registered branch in Turate, near the Milan motorway network"
 ];
 
 const containerList = [
   "Full 20ft or 40ft container",
-  "Direct to your port of choice",
-  "Commercial and shipping documentation managed",
-  "Suitable for selected global markets"
+  "Produced to order and shipped factory-to-door",
+  "Tailored design, size, and finish selections",
+  "Commercial and shipping documentation coordinated"
 ];
 
 const coverageItems = [
-  ["GB", "United Kingdom", "Stock-supported"],
-  ["NL", "Netherlands", "Active distribution market"],
-  ["BE", "Belgium", "Project supply"],
-  ["PL", "Poland", "Growth market"],
-  ["DE", "Germany", "Specification-led sales"],
-  ["CH", "Switzerland", "Commercial alignment"],
-  ["IT", "Italy", "Warehouse and logistics platform"],
-  ["INTL", "Selected export markets", "Full container direct"]
+  ["CH", "Switzerland", "Headquarters and commercial management"],
+  ["IT", "Italy", "Registered branch, stock, and logistics"],
+  ["GB", "United Kingdom", "European market coverage"],
+  ["NL", "Netherlands", "European market coverage"],
+  ["BE", "Belgium", "European market coverage"],
+  ["PL", "Poland", "European market coverage"],
+  ["DE", "Germany", "European market coverage"],
+  ["15+", "European markets", "Pan-European delivery"]
 ];
 
 function Logistics() {
@@ -39,7 +39,7 @@ function Logistics() {
     <>
       <PageTitle
         title="Logistics"
-        description="Vertex Laminati supplies through an Italy-based warehouse programme and direct-container logistics for larger European and export accounts."
+        description="Vertex Laminati combines Swiss commercial management with a registered logistics branch in Turate near Milan, supporting mixed pallets, full trucks, and direct containers across Europe."
         path="/logistics"
       />
 
@@ -50,8 +50,8 @@ function Logistics() {
             <p className="page-hero__breadcrumb">Home / Logistics</p>
             <h1>Tailored supply. Reliable delivery.</h1>
             <p>
-              Our Italy-based warehouse model and direct-container options let Vertex serve both repeat buyers and
-              larger seasonal programmes.
+              Swiss commercial management and a logistics hub in Turate near Milan support flexible European stock,
+              project supply, and direct-container programmes.
             </p>
           </div>
         </section>
@@ -59,7 +59,7 @@ function Logistics() {
         <section className="section section--white">
           <div ref={modelRef} className="reveal">
             <p className="section-label">HOW WE SUPPLY</p>
-            <h2 className="section-title">Two supply models. One commercial relationship.</h2>
+            <h2 className="section-title">Two supply models. One accountable relationship.</h2>
             <div className="supply-models">
               <article className="supply-card supply-card--light">
                 <div className="supply-card__icon">
@@ -67,9 +67,9 @@ function Logistics() {
                 </div>
                 <h3>Warehouse Stock Programme</h3>
                 <p>
-                  Product held in Italy and available in flexible commercial quantities. Ideal for distributors,
-                  fabricators, and project-led buyers who need replenishment speed, mixed orders, or lower initial
-                  commitment.
+                  Documented stock is managed through the registered Italian branch at Via C. B. Cavour 129/A, 22078
+                  Turate (CO). The location supports distributors, fabricators, and project buyers needing mixed
+                  orders, repeat call-offs, and faster European dispatch.
                 </p>
                 <ul className="detail-list">
                   {warehouseList.map((item) => (
@@ -84,8 +84,9 @@ function Logistics() {
                 </div>
                 <h3>Full Container Direct</h3>
                 <p>
-                  For higher-volume accounts, direct containers improve landed cost and widen range flexibility. We
-                  coordinate the commercial paperwork, shipping structure, and documentation package end to end.
+                  Full containers are produced to order and shipped from the manufacturing partner to the customer.
+                  The model provides wider control over design, size, finish, programming, and landed economics for
+                  volume partners.
                 </p>
                 <ul className="detail-list detail-list--light">
                   {containerList.map((item) => (
@@ -100,10 +101,10 @@ function Logistics() {
         <section className="section section--stone">
           <div ref={coverageRef} className="reveal">
             <p className="section-label">COVERAGE</p>
-            <h2 className="section-title">Built around Europe’s buying rhythm.</h2>
+            <h2 className="section-title">Built around Europe&apos;s buying rhythm.</h2>
             <p className="section-copy coverage-copy">
-              The Vertex model starts with Europe, where lead times, replenishment reliability, and specification
-              confidence matter most. Export markets are supported when volumes and routing justify direct shipment.
+              The Vertex model supports more than 15 European markets through mixed pallets, full trucks, and direct
+              containers, with transparent lead times and senior guidance on every programme.
             </p>
             <div className="coverage-grid">
               {coverageItems.map(([flag, country, status]) => (

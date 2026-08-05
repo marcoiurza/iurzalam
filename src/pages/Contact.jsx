@@ -31,7 +31,7 @@ function Contact() {
     <>
       <PageTitle
         title="Contact"
-        description="Contact Vertex Laminati for specification packs, certification documentation, warehouse supply planning, or direct-container enquiries."
+        description="Contact Vertex Laminati's Swiss headquarters or Italian logistics branch for product specifications, samples, documentation, stock supply, and direct-container programmes."
         path="/contact"
       />
 
@@ -81,7 +81,17 @@ function Contact() {
                   </div>
                   <div>
                     <strong>{siteMeta.address}</strong>
-                    <span>{siteMeta.logisticsHub}</span>
+                    <span>Swiss registered office · UID {siteMeta.uid}</span>
+                  </div>
+                </div>
+
+                <div className="contact-block">
+                  <div className="contact-block__icon">
+                    <PinIcon />
+                  </div>
+                  <div>
+                    <strong>{siteMeta.logisticsHub}</strong>
+                    <span>Italian branch &amp; logistics hub · VAT {siteMeta.italianVat}</span>
                   </div>
                 </div>
 

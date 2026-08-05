@@ -27,9 +27,9 @@ function Footer() {
         <div>
           <p className="site-footer__heading">Products</p>
           <div className="site-footer__links">
-            <Link to="/products">Vertex HPL Standard</Link>
-            <Link to="/products">Vertex HPL Premium</Link>
-            <Link to="/products">Vertex Compact</Link>
+            <Link to="/products">Decorative &amp; Technical HPL</Link>
+            <Link to="/products">Speciality Surfaces</Link>
+            <Link to="/products">Compact &amp; Exterior Systems</Link>
             <Link to="/products">View the full range</Link>
           </div>
         </div>
@@ -50,6 +50,8 @@ function Footer() {
             <p>{siteMeta.email}</p>
             <p>{siteMeta.phone}</p>
             <p>{siteMeta.address}</p>
+            <p>Italian branch: {siteMeta.logisticsHub}</p>
+            <p>UID {siteMeta.uid}</p>
             <p>{siteMeta.responseTime}</p>
           </div>
         </div>
@@ -57,7 +59,7 @@ function Footer() {
 
       <div className="site-footer__lower">
         <p>&copy; 2026 {siteMeta.legalName}. All rights reserved.</p>
-        <p>{siteMeta.office} - Co-creating innovative laminati solutions.</p>
+        <p>Italian VAT {siteMeta.italianVat} - REA {siteMeta.italianRea}</p>
       </div>
     </footer>
   );

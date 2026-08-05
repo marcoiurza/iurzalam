@@ -4,89 +4,138 @@ import PageTitle from "../components/PageTitle";
 import { images } from "../data/siteContent";
 import { useReveal } from "../hooks/useReveal";
 
-const docsValue = "ETA - FSC - PEFC - Greenguard Gold - CATAS";
-
-const standardSpecs = [
-  ["Thickness", "0.6mm - 1.5mm"],
-  ["Formats", "1300x3050mm - 1300x4200mm"],
-  ["Finishes", "Matt - Gloss - Soft Touch - Brushed - Textured - Metallic"],
-  ["Decor range", "Solids - Wood - Stone - Concrete - Abstract"],
-  ["Applications", "Furniture - Shopfitting - Partitioning - Cabinetry"],
-  ["Documentation", docsValue],
-  ["Standard", "EN 438"],
-  ["Supply options", "Italy stock programme - Full container direct"]
+const formats = [
+  "1220 × 2440",
+  "1245 × 2465",
+  "1300 × 2800",
+  "1300 × 3050",
+  "1860 × 2440",
+  "1860 × 3660",
+  "1860 × 4320",
+  "1600 × 3660",
+  "1600 × 4320",
+  "2160 × 2980"
 ];
 
-const premiumSpecs = [
-  ["Thickness", "3mm - 6mm - 12mm - 20mm"],
-  ["Sheet size", "760x2440mm - 760x3660mm"],
-  ["Surface", "100% acrylic solid surface on HPL substrate"],
-  ["Finishes", "Matt - Gloss - Anti-fingerprint"],
-  ["Documentation", docsValue],
-  ["Fire rating", "Fire retardant grade available"],
-  ["Special properties", "Thermoformable - Non-porous - Repairable - Food-contact safe"],
-  ["Supply options", "Italy stock programme - Full container direct"]
+const corePortfolio = [
+  {
+    name: "Decorative Laminates",
+    body: "Benchmark HPL for furniture, cladding, doors, shelving, cabinetry, and store fitting, offered across a broad décor and finish programme."
+  },
+  {
+    name: "Unicore Laminates",
+    body: "Colour-through decorative papers infused with melamine and thermosetting resins as both surface and core for a uniform visual result."
+  },
+  {
+    name: "Digital · DigiDelight",
+    body: "Custom digital surfaces that translate graphics, themes, and project-specific artwork into durable decorative laminate."
+  },
+  {
+    name: "Post-Forming Laminates",
+    body: "Thermoformable laminate for forward and reverse bending around substrate edges, creating smooth corners on horizontal and vertical interiors."
+  },
+  {
+    name: "Electrostatic · ESD",
+    body: "Static-dissipative laminate for IT spaces, laboratories, electronics, pharmaceutical environments, and other ESD-sensitive applications."
+  },
+  {
+    name: "Magnetic Laminates",
+    body: "A magnetic decorative surface that can also accept non-permanent markers for retail, education, commercial, and residential use."
+  },
+  {
+    name: "Chalk & Marker Boards",
+    body: "Smooth, durable writing-grade boards for schools, offices, hospitality, restaurants, and collaborative interiors."
+  },
+  {
+    name: "Synchro Laminates",
+    body: "Embossed-in-register surfaces designed to align texture with the visual grain for a more convincing solid-wood and veneer character."
+  },
+  {
+    name: "MirrorShield Laminates",
+    body: "Real aluminium, stainless-steel, and copper foils on a phenolic kraft base for durable, semi-rigid reflective surface applications."
+  },
+  {
+    name: "Metallic · GloMetal",
+    body: "Premium metal laminates combining refined visual effects with the durability required for demanding design-led interiors."
+  },
+  {
+    name: "Flicker Laminates",
+    body: "A specialist decorative-effect family available for projects seeking distinctive light, movement, and visual character."
+  },
+  {
+    name: "Chemical Resistant Laminates",
+    body: "HPHT-engineered surfaces for areas of heavy chemical use, with grade-specific resistance, hygiene, and cleaning documentation."
+  },
+  {
+    name: "Fire Retardant Laminates",
+    body: "Grade-specific constructions developed to limit flame propagation. Classification evidence is matched to the exact product and installation."
+  },
+  {
+    name: "Industrial Laminates",
+    body: "Structural composites of resin-impregnated fibrous webs fused under heat and pressure for stable geometry and high strength-to-weight performance."
+  }
 ];
 
-const compactSpecs = [
-  ["Thickness", "2mm - 3mm - 4mm - 6mm - 10mm - 13mm - 20mm - 25mm+"],
-  ["Formats", "Standard - Large format"],
-  ["Grades", "Interior - Exterior (UV-stable) - Anti-bacterial - Marine"],
-  ["Finishes", "Matt - Gloss - Satin - Metallic - Textured"],
-  ["Edge", "Homogenous through-colour core"],
-  ["Applications", "Washrooms - Lockers - Worktops - Exterior Cladding - Marine"],
-  ["Documentation", docsValue],
-  ["Standard", "EN 438-6"],
-  ["Supply options", "Italy stock programme - Full container direct"]
+const complementaryPortfolio = [
+  {
+    name: "Granex · Acrylic Solid Surface",
+    body: "A non-porous composite of alumina trihydrate, acrylic MMA resin, and pigments, designed to evoke natural stone and support seamless fabrication."
+  },
+  {
+    name: "TableX Table Tops",
+    body: "A dedicated table-top range for interior and exterior hospitality, workplace, and leisure applications."
+  },
+  {
+    name: "Stella Multipanels",
+    body: "Lightweight decorative panels spanning solid, stone, and wood interpretations for versatile interior applications."
+  },
+  {
+    name: "Exterior Cladding · Fascia",
+    body: "Compact façade panels with a UV-protective surface system, available across project-specific colours, thicknesses, and formats."
+  },
+  {
+    name: "Cuboid Cubicles & Lockers",
+    body: "A modular compact-panel system for washrooms, lockers, healthcare, education, transport, hospitality, and other high-traffic environments."
+  },
+  {
+    name: "Hot Coating Technology",
+    body: "A PU and acrylic coating process developed for high scratch and abrasion resistance on specialist board and surface programmes."
+  },
+  {
+    name: "TouchMe Anti-Fingerprint",
+    body: "Super-matt prelaminated MDF with a soft-touch, low-reflective finish and anti-fingerprint surface character."
+  },
+  {
+    name: "Gloss Pro+ High Gloss",
+    body: "High-gloss prelaminated boards produced on specialist European technology for durable, design-led interior surfaces."
+  }
 ];
 
-const comparisonRows = [
-  ["Self-supporting", "No", "No", "Yes"],
-  ["Exterior grade", "No", "No", "Yes"],
-  ["Thermoformable", "No", "Yes", "No"],
-  ["Anti-bacterial options", "Available", "Core offer", "Core offer"],
-  ["Certification suite", "Complete", "Complete", "Complete"],
-  ["Food-contact safe", "No", "Yes", "No"],
-  ["Moisture resistance", "Low-Medium", "High", "Very High"],
-  ["Supply model", "Stock or direct", "Stock or direct", "Stock or direct"],
-  ["Best fit", "Furniture & shopfit", "High-spec interiors", "Washrooms & exterior"]
-];
-
-function ProductGallery({ items }) {
+function ProductGrid({ items, start = 1 }) {
   return (
-    <div className="product-gallery" role="list">
-      {items.map((item) => (
-        <figure key={item.caption} className="product-gallery__item" role="listitem">
-          <img src={item.image} alt={item.alt} loading="lazy" />
-          <figcaption>{item.caption}</figcaption>
-        </figure>
-      ))}
-    </div>
-  );
-}
-
-function SpecsGrid({ items }) {
-  return (
-    <div className="spec-grid">
-      {items.map(([label, value]) => (
-        <div key={label} className="spec-grid__item">
-          <span>{label}</span>
-          <strong>{value}</strong>
-        </div>
+    <div className="portfolio-grid">
+      {items.map((item, index) => (
+        <article key={item.name} className="portfolio-card">
+          <span className="portfolio-card__number">{String(index + start).padStart(2, "0")}</span>
+          <h3>{item.name}</h3>
+          <p>{item.body}</p>
+        </article>
       ))}
     </div>
   );
 }
 
 function Products() {
-  const statsRef = useReveal();
-  const compareRef = useReveal();
+  const dimensionsRef = useReveal();
+  const coreRef = useReveal();
+  const complementaryRef = useReveal();
+  const ctaRef = useReveal();
 
   return (
     <>
       <PageTitle
         title="Products"
-        description="Explore the Vertex Laminati range: HPL Standard, HPL Premium, and Compact surfaces for cabinetry, fit-out, washrooms, and exterior applications."
+        description="Explore Vertex decorative, technical, compact, exterior, industrial, acrylic, writable, metallic, and prelaminated surfaces across ten formats, up to 2160 mm wide or 4320 mm long, and thicknesses from 0.5 to 30 mm."
         path="/products"
       />
 
@@ -95,161 +144,93 @@ function Products() {
           <div className="page-hero__overlay page-hero__overlay--dark" />
           <div className="page-hero__content page-hero__content--bottom">
             <p className="page-hero__breadcrumb">Home / Products</p>
-            <h1>Innovative laminati solutions.</h1>
+            <h1>High-pressure & compact decorative laminates.</h1>
             <p>
-              Three surface systems, each positioned for professional distribution, specification, and repeat supply.
+              A broad European distribution portfolio spanning decorative surfaces, performance grades, compact
+              systems, specialist boards, and industrial applications.
             </p>
           </div>
         </section>
 
-        <section ref={statsRef} className="stats-bar reveal">
+        <section className="stats-bar">
           <div className="stats-bar__item">
-            <strong>Three product lines</strong>
-            <span>HPL Standard - HPL Premium - Compact</span>
-          </div>
-          <div className="stats-bar__item">
-            <strong>Flexible volumes</strong>
-            <span>Italy stock support or direct-container planning</span>
+            <strong>14 core families</strong>
+            <span>Decorative, technical, writable, metallic, and industrial HPL</span>
           </div>
           <div className="stats-bar__item">
-            <strong>Certification ready</strong>
-            <span>ETA - FSC - PEFC - Greenguard Gold - CATAS</span>
+            <strong>10 formats</strong>
+            <span>Up to 2160 mm wide or 4320 mm long</span>
+          </div>
+          <div className="stats-bar__item">
+            <strong>0.5–30 mm</strong>
+            <span>Thin decorative sheets through structural compact panels</span>
           </div>
         </section>
 
-        <section className="product-detail product-detail--stone">
-          <div className="product-detail__media product-detail__media--sticky">
-            <div className="product-detail__image-wrap">
-              <img src={images.KITCHEN_1} alt="Vertex HPL Standard kitchen surface application" loading="lazy" />
-              <div className="product-detail__label-box">
-                <h2>Vertex HPL Standard</h2>
-                <span>High-pressure laminate</span>
+        <section className="section section--white">
+          <div ref={dimensionsRef} className="reveal">
+            <p className="section-label">FORMATS &amp; THICKNESSES</p>
+            <h2 className="section-title">A format range built for fabrication.</h2>
+            <p className="section-copy">
+              The complete portfolio spans ten published sheet formats and a 0.5–30 mm thickness range. Availability
+              varies by product, décor, finish, grade, and supply programme, so final dimensions are confirmed during
+              specification.
+            </p>
+            <div className="format-range">
+              <div className="format-grid" aria-label="Available sheet formats in millimetres">
+                {formats.map((format) => (
+                  <div key={format} className="format-grid__item">
+                    <strong>{format}</strong>
+                    <span>mm</span>
+                  </div>
+                ))}
               </div>
-            </div>
-          </div>
-          <div className="product-detail__content">
-            <span className="product-detail__count">01 / 03</span>
-            <h2>Vertex HPL Standard</h2>
-            <p>
-              General-purpose high-pressure laminate for furniture manufacturing, shopfitting, cabinetry, and
-              interior wall systems. The range is designed to cover the commercial core: dependable decors, workable
-              lead times, and documentation fit for professional buyers.
-            </p>
-            <p>
-              Stock-supported through Italy for flexible quantities, with direct-container options for accounts that
-              want wider range consolidation or lower landed cost at scale.
-            </p>
-            <SpecsGrid items={standardSpecs} />
-            <ProductGallery
-              items={[
-                { image: images.KITCHEN_1, alt: "Kitchen worktops in Vertex HPL Standard laminate", caption: "Kitchen Worktops" },
-                { image: images.OFFICE_1, alt: "Office furniture made with Vertex HPL Standard laminate", caption: "Office Furniture" },
-                { image: images.COMMERCIAL_1, alt: "Bar and counter fit-out in Vertex HPL Standard laminate", caption: "Bar & Counter" },
-                { image: images.SHOWROOM, alt: "Retail shopfitting with Vertex decorative laminate surfaces", caption: "Retail Shopfitting" }
-              ]}
-            />
-            <Link className="btn-primary" to="/contact">
-              Request Specification Sheet
-            </Link>
-          </div>
-        </section>
-
-        <section className="product-detail product-detail--white product-detail--reverse">
-          <div className="product-detail__content">
-            <span className="product-detail__count">02 / 03</span>
-            <h2>Vertex HPL Premium</h2>
-            <p>
-              Vertex HPL Premium combines an acrylic solid-surface finish with an HPL substrate to deliver a more
-              seamless, repairable, and specification-led surface option for high-end interiors.
-            </p>
-            <p>
-              It is the right choice where designers want laminate efficiency with a more elevated finish language:
-              reception desks, bathroom vanities, hospitality counters, healthcare joinery, and other premium-touch
-              applications.
-            </p>
-            <SpecsGrid items={premiumSpecs} />
-            <ProductGallery
-              items={[
-                { image: images.KITCHEN_2, alt: "High-spec kitchen island in Vertex HPL Premium", caption: "Kitchen Islands" },
-                { image: images.BATHROOM_1, alt: "Bathroom vanity in Vertex HPL Premium", caption: "Bathroom Vanity" },
-                { image: images.COMMERCIAL_2, alt: "Commercial counters in Vertex HPL Premium", caption: "Commercial Counters" },
-                { image: images.OFFICE_2, alt: "Reception desk specified in Vertex HPL Premium", caption: "Reception Desks" }
-              ]}
-            />
-            <div className="feature-callout">
-              A premium surface offer positioned for designers and buyers who need higher perceived value without
-              sacrificing documentation, repeatability, or supply flexibility.
-            </div>
-          </div>
-          <div className="product-detail__media product-detail__media--sticky">
-            <div className="product-detail__image-wrap">
-              <img src={images.BATHROOM_2} alt="Vertex HPL Premium bathroom interior application" loading="lazy" />
-              <div className="product-detail__label-box">
-                <h2>Vertex HPL Premium</h2>
-                <span>Specification surface system</span>
-              </div>
+              <aside className="thickness-card">
+                <span>THICKNESSES</span>
+                <strong>0.5–30 mm</strong>
+                <p>High-pressure laminate across the full thickness range, from thin sheets to compact panels.</p>
+              </aside>
             </div>
           </div>
         </section>
 
-        <section className="product-detail product-detail--stone">
-          <div className="product-detail__media product-detail__media--sticky">
-            <div className="product-detail__image-wrap">
-              <img src={images.LOCKER_1} alt="Vertex Compact locker installation" loading="lazy" />
-              <div className="product-detail__label-box">
-                <h2>Vertex Compact</h2>
-                <span>Self-supporting panel system</span>
-              </div>
-            </div>
-          </div>
-          <div className="product-detail__content">
-            <span className="product-detail__count">03 / 03</span>
-            <h2>Vertex Compact</h2>
-            <p>
-              Vertex Compact is a self-supporting structural laminate panel built for applications where moisture,
-              durability, hygiene, or impact resistance are non-negotiable.
+        <section className="section section--stone">
+          <div ref={coreRef} className="reveal">
+            <p className="section-label">CORE HPL PORTFOLIO</p>
+            <h2 className="section-title">Decorative range. Technical depth.</h2>
+            <p className="section-copy">
+              Fourteen core laminate families cover design, fabrication, performance, writing, metallic, hygiene,
+              fire, electrostatic, and industrial requirements.
             </p>
-            <p>
-              It is particularly well suited to washroom cubicles, locker systems, wet areas, exterior wall
-              cladding, and other environments where standard bonded laminate systems are not the right answer.
-            </p>
-            <SpecsGrid items={compactSpecs} />
-            <ProductGallery
-              items={[
-                { image: images.WASHROOM_1, alt: "Vertex Compact washroom cubicle system", caption: "Washroom Cubicles" },
-                { image: images.LOCKER_1, alt: "Vertex Compact locker systems", caption: "Locker Systems" },
-                { image: images.EXTERIOR_2, alt: "Exterior cladding in Vertex Compact", caption: "Exterior Cladding" },
-                { image: images.EXTERIOR_1, alt: "Facade panels in Vertex Compact", caption: "Facade Panels" }
-              ]}
-            />
+            <ProductGrid items={corePortfolio} />
           </div>
         </section>
 
-        <section className="comparison-section">
-          <div ref={compareRef} className="comparison-section__inner reveal">
-            <h2>Product comparison</h2>
-            <p>Choose the right surface system for the application, performance target, and buying model.</p>
-            <div className="comparison-table-wrap">
-              <table className="comparison-table">
-                <thead>
-                  <tr>
-                    <th />
-                    <th>HPL Standard</th>
-                    <th>HPL Premium</th>
-                    <th>Compact</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {comparisonRows.map((row) => (
-                    <tr key={row[0]}>
-                      <td>{row[0]}</td>
-                      <td>{row[1]}</td>
-                      <td>{row[2]}</td>
-                      <td>{row[3]}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
+        <section className="section section--white">
+          <div ref={complementaryRef} className="reveal">
+            <p className="section-label">COMPLEMENTARY SURFACES &amp; SYSTEMS</p>
+            <h2 className="section-title">Beyond conventional laminate.</h2>
+            <p className="section-copy">
+              The wider programme adds solid surfaces, table tops, lightweight panels, exterior systems, cubicles,
+              lockers, and advanced prelaminated finishes.
+            </p>
+            <ProductGrid items={complementaryPortfolio} start={15} />
+          </div>
+        </section>
+
+        <section className="section section--forest">
+          <div ref={ctaRef} className="docs-cta reveal">
+            <div>
+              <h2>Match the range to your application.</h2>
+              <p>
+                Tell us the décor, finish, format, thickness, performance requirement, annual volume, and destination.
+                We will map the suitable products, supply route, samples, and supporting documentation.
+              </p>
+            </div>
+            <div className="docs-cta__action">
+              <Link className="btn-primary" to="/contact">
+                Request a specification
+              </Link>
             </div>
           </div>
         </section>

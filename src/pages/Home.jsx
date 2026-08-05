@@ -23,15 +23,15 @@ const valueCards = [
   {
     number: "03",
     title: "Reliable Partnership",
-    body: "Our team brings laminate-market roots dating to 1968 and a commitment to consistent sourcing, responsive service, and long-term commercial relationships.",
+    body: "Our team carries four generations of laminate-market knowledge, dating to 1953, with a commitment to consistent sourcing, responsive service, and long-term commercial relationships.",
     icon: <HeritageIcon />,
     link: "/about"
   }
 ];
 
 const logisticsFacts = [
-  ["Any quantity", "From single-pallet call-offs to full-container programmes"],
-  ["Italy warehouse", "Structured for fast European replenishment"],
+  ["Flexible quantities", "From mixed pallets and full trucks to full-container programmes"],
+  ["Turate logistics hub", "Positioned near Milan for fast European replenishment"],
   ["Commercial flexibility", "Mixed orders, rolling supply, and project scheduling"],
   ["Broader reach", "Selected global markets served through direct shipment"]
 ];
@@ -39,27 +39,27 @@ const logisticsFacts = [
 const productCards = [
   {
     image: images.KITCHEN_1,
-    alt: "Kitchen interior featuring Vertex HPL Standard decorative laminate surfaces",
+    alt: "Kitchen interior featuring Vertex decorative high-pressure laminate surfaces",
     number: "01",
-    title: "Vertex HPL Standard",
-    body: "General-purpose decorative laminate for cabinetry, joinery, retail fit-out, and interior wall systems.",
-    pills: ["Matt", "Gloss", "Soft Touch", "Textured", "Wood Decor", "Solid Colour"]
+    title: "Decorative & Technical HPL",
+    body: "Decorative, Unicore, digital, Synchro, post-forming, ESD, fire-retardant, chemical-resistant, writable, and metallic laminate families.",
+    pills: ["Decorative", "Unicore", "Digital", "Synchro", "Post-forming", "Technical"]
   },
   {
     image: images.COMMERCIAL_2,
-    alt: "Commercial interior counter finished in Vertex HPL Premium decorative surface",
+    alt: "Commercial counter finished in a specialist decorative surface",
     number: "02",
-    title: "Vertex HPL Premium",
-    body: "Acrylic-faced specification surface for projects that need a more seamless, higher-performance finish.",
-    pills: ["Matt", "Gloss", "Anti-fingerprint", "Marble", "Stone", "Solid Colour"]
+    title: "Speciality Surfaces",
+    body: "Granex acrylic solid surface, TableX table tops, Stella multipanels, TouchMe anti-fingerprint, Gloss Pro+, and hot-coated boards.",
+    pills: ["Granex", "TableX", "Stella", "TouchMe", "High Gloss", "Hot Coating"]
   },
   {
     image: images.WASHROOM_1,
     alt: "Compact laminate used for washroom cubicles in commercial settings",
     number: "03",
-    title: "Vertex Compact",
-    body: "Self-supporting compact laminate for washrooms, lockers, cladding, and other moisture-critical applications.",
-    pills: ["Interior Grade", "Exterior Grade", "Anti-bacterial", "Marine", "Cladding"]
+    title: "Compact & Exterior Systems",
+    body: "Structural compact panels for cubicles, lockers, façades, fascia systems, wet areas, and other demanding applications.",
+    pills: ["Compact", "Exterior", "Cubicles", "Lockers", "Marine", "Cladding"]
   }
 ];
 
@@ -76,7 +76,7 @@ function Home() {
     <>
       <PageTitle
         title="Co-creator of possibilities"
-        description="Vertex Laminati SA guides and co-creates tailored HPL and compact laminate solutions, transforming possibility into long-term growth."
+        description="Vertex Laminati SA supplies a broad portfolio of decorative, technical, compact, exterior, and specialist laminate surfaces across Europe."
         path="/"
       />
 
@@ -108,7 +108,7 @@ function Home() {
         </section>
 
         <section className="cert-strip">
-          <div className="cert-strip__label">Certification suite</div>
+          <div className="cert-strip__label">Supporting documentation</div>
           {certificationItems.map((item) => (
             <Link key={item.abbr} className="cert-strip__item" to="/certifications">
               <span className="cert-strip__name">{item.abbr}</span>
@@ -180,8 +180,8 @@ function Home() {
               <p className="section-label section-label--light">LOGISTICS</p>
               <h2>Italy warehouse. Europe-first supply.</h2>
               <p>
-                Our logistics model is structured around European replenishment: shorter lead times, flexible order
-                sizes, and direct container options for larger accounts that want margin-efficient scale.
+                Our Turate logistics hub near Milan supports European replenishment with flexible quantities, mixed
+                pallets, full trucks, and direct containers for larger programmes.
               </p>
             </div>
           </div>
@@ -201,9 +201,9 @@ function Home() {
               <p className="section-label">MARKET COVERAGE</p>
               <h2 className="section-title">Europe first. Export-ready when needed.</h2>
               <p className="section-copy">
-                Vertex Laminati is built around Europe’s distributor and fabricator markets, with active commercial
-                focus across the UK, Benelux, DACH, Poland, and Switzerland. Selected global accounts are supported
-                through direct shipment structures where the economics make sense.
+                Vertex Laminati supports distributors, fabricators, and industrial converters across more than 15
+                European markets. Selected global accounts are served through direct shipment structures when the
+                programme and routing are suitable.
               </p>
 
               <div className="market-list">
@@ -239,10 +239,10 @@ function Home() {
           <div ref={quoteRef} className="reveal heritage-quote__inner">
             <span className="heritage-quote__mark">&ldquo;</span>
             <blockquote>
-              Our founding team brings over 55 years of experience in European laminate distribution, built since
-              1968.
+              Four generations in decorative laminates. More than 70 years of product knowledge, relationships, and
+              dependable service since 1953.
             </blockquote>
-            <p>Institutional market knowledge - Europe-focused commercial discipline - Built since 1968</p>
+            <p>Four generations - European distribution heritage - Built since 1953</p>
           </div>
         </section>
 
@@ -250,10 +250,10 @@ function Home() {
           <div ref={productRef} className="reveal">
             <div className="section-header section-header--narrow">
               <p className="section-label">OUR RANGE</p>
-              <h2 className="section-title">Three product lines. One clear specification offer.</h2>
+              <h2 className="section-title">A broad surface portfolio. One committed partner.</h2>
               <p className="section-subtitle section-subtitle--left">
-                From general-purpose HPL to self-supporting compact laminate, the Vertex range is positioned for
-                distributor sales, project supply, and repeat fabrication programmes across Europe.
+                From decorative and technical HPL to compact systems, acrylic solid surfaces, prelaminated boards,
+                and specialist finishes, Vertex brings the range together for European distribution and fabrication.
               </p>
             </div>
 
@@ -262,7 +262,7 @@ function Home() {
                 <article key={card.title} className="product-preview-card">
                   <div className="product-preview-card__media">
                     <img src={card.image} alt={card.alt} loading="lazy" />
-                    <span className="product-preview-card__badge">Documentation Ready</span>
+                    <span className="product-preview-card__badge">Specification supported</span>
                   </div>
                   <div className="product-preview-card__body">
                     <span className="product-preview-card__number">{card.number}</span>

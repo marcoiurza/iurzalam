@@ -1,59 +1,60 @@
 import PageTitle from "../components/PageTitle";
-import { images } from "../data/siteContent";
+import { images, siteMeta } from "../data/siteContent";
 import { useReveal } from "../hooks/useReveal";
 
 const timeline = [
-  ["1968", "Commercial roots established in European laminate distribution."],
-  ["1990s-2010s", "Relationships expanded across Benelux, DACH, Italy, and Poland through active B2B market work."],
-  ["Today", "Vertex Laminati operates as an independent European brand with proprietary public positioning and flexible supply infrastructure."]
+  ["1953", "The first generation begins working in decorative laminates, establishing the product and market knowledge carried forward by Vertex."],
+  ["April 2026", "Vertex Laminati SA is incorporated in Switzerland and entered in the Ticino Commercial Register."],
+  ["June 2026", "The Italian branch is established in Turate, creating a registered logistics base near Milan for European distribution."],
+  ["Today", "Swiss commercial management and an Italian logistics platform support distributors, fabricators, and industrial converters across more than 15 European markets."]
 ];
 
 const businessCards = [
   {
-    title: "Creative by Nature",
-    body: "We explore new possibilities and turn market insight, technical understanding, and original thinking into meaningful laminate solutions."
+    title: "Swiss Reliability",
+    body: "Commercial management, contracts, quality administration, and senior guidance are coordinated from the registered headquarters in Coldrerio, Ticino."
   },
   {
-    title: "Collaborative by Design",
-    body: "We work alongside our partners, becoming an extension of their team and shaping solutions around shared commercial goals."
+    title: "European Distribution",
+    body: "The Turate branch near Milan supports flexible stock, mixed pallets, full trucks, rapid dispatch, and direct-container programmes."
   },
   {
-    title: "Reliable in Delivery",
-    body: "We pair intelligent guidance with consistent sourcing, Europe-first distribution, and responsive service our partners can depend on."
+    title: "Manufacturing Depth",
+    body: "A long-term relationship with Stylam Industries connects Vertex to a broad, certified manufacturing portfolio serving more than 80 export countries."
   }
 ];
 
 const teamCards = [
   {
-    title: "Founder & CEO",
-    body: "Leads commercial strategy, supplier coordination, and European market development, with more than a decade of international B2B distribution experience."
-  },
-  {
-    title: "Industry Senior Advisor",
-    body: "Brings over 30 years in European laminate distribution, with deep relationships across Benelux, Poland, Italy, and broader specification-led channels."
+    title: "General Management",
+    body: "Senior commercial direction from Switzerland, linking market strategy, supplier relationships, quality administration, and customer decision-making."
   },
   {
     title: "Operations & Logistics",
-    body: "Coordinates warehouse planning, shipment structures, and documentation flow to keep repeat supply reliable across multiple destination markets."
+    body: "A cross-border team covering warehouse supervision, logistics and distribution, sales administration, facilities, samples, and office coordination."
+  },
+  {
+    title: "Finance & Sales",
+    body: "Swiss finance support and regional commercial roles provide direct guidance, responsive quotations, and structured account development."
   }
 ];
 
 const companyInfo = [
-  ["Public brand", "Vertex Laminati"],
-  ["Legal entity", "Vertex Laminati SA"],
-  ["Commercial office", "Coldrerio, Ticino, Switzerland"],
-  ["Distribution model", "Italy stock programme - Full container direct"],
-  ["Primary coverage", "United Kingdom - Benelux - Germany - Poland - Switzerland"],
-  ["Commercial focus", "Distributors - Fabricators - Joinery manufacturers - Project-led buyers"]
+  ["Legal entity", siteMeta.legalName],
+  ["Legal form", siteMeta.legalForm],
+  ["Swiss UID", siteMeta.uid],
+  ["Registered", siteMeta.registeredSince],
+  ["Registered office", siteMeta.address],
+  ["Share capital", "CHF 500,000 - fully paid"],
+  ["Italian branch", siteMeta.logisticsHub],
+  ["Italian identifiers", `VAT ${siteMeta.italianVat} - REA ${siteMeta.italianRea}`]
 ];
 
-const countryCards = [
-  ["GB", "United Kingdom", "Active"],
-  ["NL", "Netherlands", "Active"],
-  ["BE", "Belgium", "Active"],
-  ["PL", "Poland", "Active"],
-  ["DE", "Germany", "Active"],
-  ["CH", "Switzerland", "Active"]
+const operatingCards = [
+  ["CH", "Swiss headquarters", "Management & administration"],
+  ["IT", "Turate logistics hub", "Stock & distribution"],
+  ["EU", "Pan-European delivery", "Pallets, trucks & containers"],
+  ["15+", "European markets", "Distributor & fabricator focus"]
 ];
 
 function About() {
@@ -65,7 +66,7 @@ function About() {
     <>
       <PageTitle
         title="About"
-        description="Vertex Laminati is a creative, collaborative, trusted, and intelligent co-creator of tailored laminate solutions, built on European industry roots dating to 1968."
+        description="Vertex Laminati SA is a Swiss distributor of decorative and compact laminates, built on four generations of industry experience since 1953 and supported by a logistics hub near Milan."
         path="/about"
       />
 
@@ -75,7 +76,7 @@ function About() {
           <div className="page-hero__content page-hero__content--mid">
             <p className="section-label section-label--light">WHO WE ARE</p>
             <h1>
-              The co-creator <em>of possibilities.</em>
+              Four generations <em>in decorative laminates.</em>
             </h1>
           </div>
         </section>
@@ -93,8 +94,8 @@ function About() {
             <aside className="pull-quote-card">
               <span className="pull-quote-card__mark">&ldquo;</span>
               <blockquote>
-                Vertex Laminati is led by professionals with roots in European laminate distribution going back to
-                1968.
+                More than seventy years of product knowledge, market relationships, and one simple promise: we do
+                not let our partners down.
               </blockquote>
             </aside>
           </div>
@@ -102,8 +103,8 @@ function About() {
 
         <section className="section section--stone">
           <div ref={businessRef} className="reveal">
-            <p className="section-label">OUR PERSONALITY</p>
-            <h2 className="section-title">Creative. Collaborative. Trusted. Intelligent.</h2>
+            <p className="section-label">THE VERTEX MODEL</p>
+            <h2 className="section-title">European quality. Better economics. One committed partner.</h2>
             <div className="business-grid">
               {businessCards.map((card) => (
                 <article key={card.title} className="business-card">
@@ -118,14 +119,15 @@ function About() {
         <section className="section section--charcoal">
           <div ref={rootsRef} className="european-roots reveal">
             <div>
-              <h2>Role-based leadership, Europe-focused execution.</h2>
+              <h2>Senior-led across Switzerland and Italy.</h2>
               <p>
-                The public-facing team profile is deliberately role-led. Buyers work with Vertex Laminati as a
-                professional commercial platform, not as a personality-led or supplier-led resale business.
+                The organisation spans management, operations, warehouse and logistics, samples and facilities,
+                finance, sales administration, and regional commercial development. Publicly, Vertex presents the
+                team by function so customers know how the business supports them without exposing internal HR data.
               </p>
             </div>
             <div className="dark-country-grid">
-              {countryCards.map(([flag, country, status]) => (
+              {operatingCards.map(([flag, country, status]) => (
                 <div key={country} className="dark-country-card">
                   <strong>
                     {flag} {country}
@@ -139,8 +141,8 @@ function About() {
 
         <section className="section section--white">
           <div>
-            <p className="section-label">LEADERSHIP ROLES</p>
-            <h2 className="section-title">Public team profile</h2>
+            <p className="section-label">ORGANISATION</p>
+            <h2 className="section-title">Direct, functional, accountable.</h2>
             <div className="credential-grid">
               {teamCards.map((card) => (
                 <article key={card.title} className="credential-card">
@@ -154,8 +156,12 @@ function About() {
 
         <section className="section section--stone">
           <div>
-            <p className="section-label">COMPANY PROFILE</p>
+            <p className="section-label">OFFICIAL COMPANY PROFILE</p>
             <h2 className="section-title">Vertex Laminati SA</h2>
+            <p className="section-copy">
+              The registered corporate purpose covers the import, export, trade, and processing of timber, panels,
+              semi-finished goods, decorative surfaces, and related materials for furniture, interiors, and building.
+            </p>
             <div className="company-grid">
               {companyInfo.map(([label, value]) => (
                 <div key={label} className="company-grid__item">

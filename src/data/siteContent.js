@@ -7,12 +7,17 @@ export const siteMeta = {
   siteUrl: "https://vertexlaminati.ch",
   defaultTitle: "Vertex Laminati SA | Co-creator of possibilities",
   defaultDescription:
-    "Vertex Laminati SA guides and co-creates tailored HPL and compact laminate solutions, transforming possibility into long-term growth.",
+    "Swiss distributor of high-pressure and compact decorative laminates, supplying European distributors, fabricators, and industrial converters.",
   email: "info@vertexlaminati.ch",
   phone: "+41 79 958 78 73",
   office: "Coldrerio, Ticino, Switzerland",
-  address: "Via P.F. Mola 26, 6877 Coldrerio, Switzerland",
-  logisticsHub: "Italy warehouse programme",
+  address: "Via P. F. Mola 26, 6877 Coldrerio, Switzerland",
+  logisticsHub: "Via C. B. Cavour 129/A, 22078 Turate (CO), Italy",
+  legalForm: "Swiss corporation (Société anonyme / Aktiengesellschaft)",
+  uid: "CHE-492.360.276",
+  italianVat: "04307640138",
+  italianRea: "CO-435140",
+  registeredSince: "28 April 2026",
   responseTime: "Within one business day",
   logo: "/brand/vertex-lockup-deep-blue.svg",
   ogImage: "/vertex-og.png"
@@ -56,48 +61,49 @@ export const navLinks = [
 ];
 
 export const certificationItems = [
-  { abbr: "ETA", desc: "European Technical Assessment" },
-  { abbr: "FSC", desc: "Responsible sourcing" },
-  { abbr: "PEFC", desc: "Certified chain of custody" },
-  { abbr: "Greenguard", desc: "Low-emission interiors" },
-  { abbr: "CATAS", desc: "Independent performance testing" }
+  { abbr: "CE / DoP", desc: "Compact wall panels" },
+  { abbr: "FSC CoC support", desc: "Manufacturer-held; claims by order" },
+  { abbr: "EPD", desc: "Compact panel declaration" },
+  { abbr: "GREENGUARD Gold", desc: "Manufacturer-held HPL certificate" },
+  { abbr: "M1", desc: "Specified low-emission HPL" },
+  { abbr: "DNV", desc: "Marine-grade documentation" }
 ];
 
 export const homeApplications = [
   {
     image: images.KITCHEN_2,
     title: "Kitchen Cabinetry",
-    desc: "Vertex HPL Standard - Solid and stone decors",
+    desc: "Decorative, Unicore, and Synchro laminates",
     alt: "Kitchen cabinetry and work surfaces finished in decorative laminate"
   },
   {
     image: images.BATHROOM_2,
     title: "Bathroom Vanity",
-    desc: "Vertex HPL Premium - Seamless specification finish",
+    desc: "Chemical-resistant and hygienic surface options",
     alt: "Bathroom vanity application using premium decorative laminate surfaces"
   },
   {
     image: images.OFFICE_2,
     title: "Office Wall Panelling",
-    desc: "Vertex HPL Standard - Workplace joinery",
+    desc: "Decorative, digital, metallic, and writable surfaces",
     alt: "Office interior wall panelling and joinery in decorative laminate"
   },
   {
     image: images.COMMERCIAL_2,
     title: "Commercial Counters",
-    desc: "Vertex HPL Premium - High-traffic interiors",
+    desc: "Post-forming and high-performance laminates",
     alt: "Commercial counter application in a hospitality interior"
   },
   {
     image: images.EXTERIOR_2,
     title: "Exterior Cladding",
-    desc: "Vertex Compact - UV-stable exterior grade",
+    desc: "Exterior compact cladding and fascia systems",
     alt: "Exterior facade cladding built with compact laminate panels"
   },
   {
     image: images.WASHROOM_1,
     title: "Washroom Cubicles",
-    desc: "Vertex Compact - Moisture-critical fit-out",
+    desc: "Compact cubicle and locker systems",
     alt: "Commercial washroom cubicle system built in compact laminate"
   },
   {
@@ -115,13 +121,14 @@ export const homeApplications = [
 ];
 
 export const reachMarkets = [
-  { flag: "GB", country: "United Kingdom", status: "Stock-supported" },
-  { flag: "NL", country: "Netherlands", status: "Distributor supply" },
-  { flag: "BE", country: "Belgium", status: "Project supply" },
-  { flag: "PL", country: "Poland", status: "Growth market" },
-  { flag: "DE", country: "Germany", status: "Specification-led sales" },
-  { flag: "CH", country: "Switzerland", status: "Commercial office alignment" },
-  { flag: "INTL", country: "Selected global markets", status: "Full container direct" }
+  { flag: "CH", country: "Switzerland", status: "Headquarters and commercial management" },
+  { flag: "IT", country: "Italy", status: "Branch, stock, and logistics" },
+  { flag: "GB", country: "United Kingdom", status: "European market coverage" },
+  { flag: "NL", country: "Netherlands", status: "European market coverage" },
+  { flag: "BE", country: "Belgium", status: "European market coverage" },
+  { flag: "PL", country: "Poland", status: "European market coverage" },
+  { flag: "DE", country: "Germany", status: "European market coverage" },
+  { flag: "15+", country: "European markets", status: "Pan-European delivery" }
 ];
 
 export const europeanCards = [
@@ -133,4 +140,4 @@ export const europeanCards = [
   { flag: "CH", country: "Switzerland", image: images.REACH_CH }
 ];
 
-export const footerCerts = ["ETA", "FSC", "PEFC", "Greenguard Gold", "CATAS"];
+export const footerCerts = ["CE / DoP", "FSC support", "EPD", "GREENGUARD Gold", "M1", "DNV"];
