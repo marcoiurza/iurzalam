@@ -153,11 +153,18 @@ function Certifications() {
               </p>
             </div>
             <figure className="certification-landscape__figure">
-              <img
-                src="/brand/certification-landscape.jpg"
-                alt="Manufacturing-level certification and compliance logo landscape from the 2026 Vertex company presentation"
-                loading="lazy"
-              />
+              <div
+                className="certification-landscape__scroller"
+                role="region"
+                aria-label="Scrollable certification logo landscape"
+                tabIndex="0"
+              >
+                <img
+                  src="/brand/certification-landscape.jpg"
+                  alt="Manufacturing-level certification and compliance logo landscape from the 2026 Vertex company presentation"
+                  loading="lazy"
+                />
+              </div>
               <figcaption>
                 Manufacturing-level certifications and supporting records. Applicability is confirmed by product,
                 grade, thickness, construction, destination market, and order documentation. Vertex FSC / PEFC

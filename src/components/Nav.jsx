@@ -23,8 +23,18 @@ function Nav() {
 
   useEffect(() => {
     document.body.style.overflow = menuOpen ? "hidden" : "";
+
+    const closeOnEscape = (event) => {
+      if (event.key === "Escape") {
+        setMenuOpen(false);
+      }
+    };
+
+    window.addEventListener("keydown", closeOnEscape);
+
     return () => {
       document.body.style.overflow = "";
+      window.removeEventListener("keydown", closeOnEscape);
     };
   }, [menuOpen]);
 
@@ -57,6 +67,7 @@ function Nav() {
               type="button"
               aria-label={menuOpen ? "Close menu" : "Open menu"}
               aria-expanded={menuOpen}
+              aria-controls="mobile-navigation"
               onClick={() => setMenuOpen((current) => !current)}
             >
               {menuOpen ? <CloseIcon /> : <MenuIcon />}
@@ -65,7 +76,12 @@ function Nav() {
         </div>
       </header>
 
-      <div className={`mobile-nav ${menuOpen ? "is-open" : ""}`} aria-hidden={!menuOpen}>
+      <div
+        id="mobile-navigation"
+        className={`mobile-nav ${menuOpen ? "is-open" : ""}`}
+        aria-hidden={!menuOpen}
+        inert={menuOpen ? undefined : ""}
+      >
         <div className="mobile-nav__header">
           <Link className="mobile-nav__brand" to="/">
             <BrandLogo compact />
@@ -80,13 +96,17 @@ function Nav() {
           </button>
         </div>
         <nav className="mobile-nav__menu" aria-label="Mobile">
-          {navLinks.map((link) => (
-            <NavLink key={link.to} to={link.to} className="mobile-nav__link">
+          {navLinks.filter((link) => link.to !== "/contact").map((link) => (
+            <NavLink
+              key={link.to}
+              to={link.to}
+              className={({ isActive }) => `mobile-nav__link${isActive ? " is-active" : ""}`}
+            >
               {link.label}
             </NavLink>
           ))}
           <Link className="btn-primary mobile-nav__cta" to="/contact">
-            Contact us
+            Start a conversation
           </Link>
         </nav>
       </div>
