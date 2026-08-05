@@ -9,10 +9,11 @@ function Footer() {
       <div className="site-footer__upper">
         <div className="site-footer__brand-col">
           <Link className="site-footer__brand" to="/">
-            <BrandLogo />
+            <BrandLogo onDark />
           </Link>
           <p className="site-footer__tagline">
-            Independent European HPL and compact laminate distribution, built since 1968.
+            Co-creator of possibilities. Intelligent guidance and tailored laminati supply, transforming
+            possibility into long-term growth.
           </p>
           <div className="site-footer__certs">
             {footerCerts.map((item) => (
@@ -47,8 +48,8 @@ function Footer() {
           <p className="site-footer__heading">Contact</p>
           <div className="site-footer__contact">
             <p>{siteMeta.email}</p>
-            <p>{siteMeta.office}</p>
-            <p>{siteMeta.logisticsHub}</p>
+            <p>{siteMeta.phone}</p>
+            <p>{siteMeta.address}</p>
             <p>{siteMeta.responseTime}</p>
           </div>
         </div>
@@ -56,7 +57,7 @@ function Footer() {
 
       <div className="site-footer__lower">
         <p>&copy; 2026 {siteMeta.legalName}. All rights reserved.</p>
-        <p>{siteMeta.office} - Distribution through Italy for Europe and selected global markets.</p>
+        <p>{siteMeta.office} - Co-creating innovative laminati solutions.</p>
       </div>
     </footer>
   );

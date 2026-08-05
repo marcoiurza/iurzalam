@@ -84,7 +84,7 @@ function Certifications() {
           <div className="page-hero__overlay page-hero__overlay--forest" />
           <div className="page-hero__content page-hero__content--centered">
             <p className="section-label section-label--light">COMPLIANCE &amp; CERTIFICATION</p>
-            <h1>Every certificate that matters.</h1>
+            <h1>Trusted guidance. Clearer specification.</h1>
             <p>
               The Vertex Laminati range is presented with the documentation needed for professional specification,
               sustainability review, and procurement sign-off across Europe.

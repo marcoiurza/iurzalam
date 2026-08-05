@@ -45,15 +45,18 @@ function PageTitle({ title, description, path = "/", image = siteMeta.ogImage, s
       "@type": "Organization",
       name: siteMeta.legalName,
       url: siteMeta.siteUrl,
-      logo: `${siteMeta.siteUrl}${siteMeta.ogImage}`,
+      logo: `${siteMeta.siteUrl}${siteMeta.logo}`,
       email: siteMeta.email,
       description: siteMeta.defaultDescription,
       address: {
         "@type": "PostalAddress",
-        addressLocality: "Chiasso",
+        streetAddress: "Via P.F. Mola 26",
+        postalCode: "6877",
+        addressLocality: "Coldrerio",
         addressRegion: "Ticino",
         addressCountry: "CH"
       },
+      telephone: siteMeta.phone,
       areaServed: ["Europe", "United Kingdom", "Switzerland"]
     };
     const schemas = [organizationSchema, pageSchema].concat(schema || []);

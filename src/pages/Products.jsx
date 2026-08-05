@@ -95,7 +95,7 @@ function Products() {
           <div className="page-hero__overlay page-hero__overlay--dark" />
           <div className="page-hero__content page-hero__content--bottom">
             <p className="page-hero__breadcrumb">Home / Products</p>
-            <h1>Vertex product range</h1>
+            <h1>Innovative laminati solutions.</h1>
             <p>
               Three surface systems, each positioned for professional distribution, specification, and repeat supply.
             </p>

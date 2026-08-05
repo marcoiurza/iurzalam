@@ -10,16 +10,16 @@ const timeline = [
 
 const businessCards = [
   {
-    title: "Independent Brand Positioning",
-    body: "Vertex Laminati presents its range as a proprietary market offer. That keeps the commercial proposition clean, protects long-term flexibility, and avoids public dependence on any one named source."
+    title: "Creative by Nature",
+    body: "We explore new possibilities and turn market insight, technical understanding, and original thinking into meaningful laminate solutions."
   },
   {
-    title: "Certification-Led Commercial Model",
-    body: "The range is framed around the approvals specifiers and procurement teams expect. Documentation is part of the offer, not a separate afterthought."
+    title: "Collaborative by Design",
+    body: "We work alongside our partners, becoming an extension of their team and shaping solutions around shared commercial goals."
   },
   {
-    title: "Europe-First Distribution",
-    body: "The operating model is designed around European replenishment discipline, with Italy-based stock support and direct-container options for accounts that need scale."
+    title: "Reliable in Delivery",
+    body: "We pair intelligent guidance with consistent sourcing, Europe-first distribution, and responsive service our partners can depend on."
   }
 ];
 
@@ -41,7 +41,7 @@ const teamCards = [
 const companyInfo = [
   ["Public brand", "Vertex Laminati"],
   ["Legal entity", "Vertex Laminati SA"],
-  ["Commercial office", "Chiasso, Ticino, Switzerland"],
+  ["Commercial office", "Coldrerio, Ticino, Switzerland"],
   ["Distribution model", "Italy stock programme - Full container direct"],
   ["Primary coverage", "United Kingdom - Benelux - Germany - Poland - Switzerland"],
   ["Commercial focus", "Distributors - Fabricators - Joinery manufacturers - Project-led buyers"]
@@ -65,7 +65,7 @@ function About() {
     <>
       <PageTitle
         title="About"
-        description="Vertex Laminati is an independent European laminate distributor built on industry roots dating back to 1968, with role-based leadership and Europe-first supply."
+        description="Vertex Laminati is a creative, collaborative, trusted, and intelligent co-creator of tailored laminate solutions, built on European industry roots dating to 1968."
         path="/about"
       />
 
@@ -73,9 +73,9 @@ function About() {
         <section className="page-hero" style={{ backgroundImage: `url(${images.HERITAGE})` }}>
           <div className="page-hero__overlay page-hero__overlay--angled" />
           <div className="page-hero__content page-hero__content--mid">
-            <p className="section-label section-label--light">OUR STORY</p>
+            <p className="section-label section-label--light">WHO WE ARE</p>
             <h1>
-              Industry roots, modern <em>positioning.</em>
+              The co-creator <em>of possibilities.</em>
             </h1>
           </div>
         </section>
@@ -102,8 +102,8 @@ function About() {
 
         <section className="section section--stone">
           <div ref={businessRef} className="reveal">
-            <p className="section-label">THE BUSINESS</p>
-            <h2 className="section-title">Built for durable market credibility.</h2>
+            <p className="section-label">OUR PERSONALITY</p>
+            <h2 className="section-title">Creative. Collaborative. Trusted. Intelligent.</h2>
             <div className="business-grid">
               {businessCards.map((card) => (
                 <article key={card.title} className="business-card">

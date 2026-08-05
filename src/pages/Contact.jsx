@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 import PageTitle from "../components/PageTitle";
-import { CheckIcon, ClockIcon, MailIcon, PinIcon } from "../components/Icons";
+import { CheckIcon, ClockIcon, MailIcon, PhoneIcon, PinIcon } from "../components/Icons";
 import { siteMeta } from "../data/siteContent";
 import { useReveal } from "../hooks/useReveal";
 
@@ -39,7 +39,7 @@ function Contact() {
         <section className="contact-hero">
           <div className="contact-hero__content">
             <h1>
-              Let&apos;s <em>talk.</em>
+              Let&apos;s create <em>new possibilities.</em>
             </h1>
             <p>We respond to professional enquiries within one business day.</p>
           </div>
@@ -48,10 +48,10 @@ function Contact() {
         <section className="section section--stone">
           <div ref={layoutRef} className="contact-layout reveal">
             <div className="contact-layout__copy">
-              <h2>Contact the commercial team</h2>
+              <h2>Intelligent guidance, tailored supply</h2>
               <p>
-                Whether you want to discuss a stocking arrangement, request documentation, or map the right product
-                line for your market, Vertex Laminati is set up to support distributor and fabrication-led enquiries.
+                Whether you want specification guidance, a stocking arrangement, documentation, or the right product
+                line mapped for your market, Vertex Laminati SA is set up to support distributor and fabrication-led enquiries.
               </p>
 
               <div className="contact-blocks">
@@ -67,10 +67,20 @@ function Contact() {
 
                 <div className="contact-block">
                   <div className="contact-block__icon">
+                    <PhoneIcon />
+                  </div>
+                  <div>
+                    <strong>{siteMeta.phone}</strong>
+                    <span>Mon–Fri, business hours CET</span>
+                  </div>
+                </div>
+
+                <div className="contact-block">
+                  <div className="contact-block__icon">
                     <PinIcon />
                   </div>
                   <div>
-                    <strong>{siteMeta.office}</strong>
+                    <strong>{siteMeta.address}</strong>
                     <span>{siteMeta.logisticsHub}</span>
                   </div>
                 </div>

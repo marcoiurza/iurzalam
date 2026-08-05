@@ -50,7 +50,7 @@ function Nav() {
 
           <div className="site-nav__actions">
             <Link className="btn-primary btn-primary--small" to="/contact">
-              Request a Quote
+              Contact us
             </Link>
             <button
               className="site-nav__toggle"
@@ -86,7 +86,7 @@ function Nav() {
             </NavLink>
           ))}
           <Link className="btn-primary mobile-nav__cta" to="/contact">
-            Contact Sales
+            Contact us
           </Link>
         </nav>
       </div>

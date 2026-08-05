@@ -8,22 +8,22 @@ import { useReveal } from "../hooks/useReveal";
 const valueCards = [
   {
     number: "01",
-    title: "Certification-Led Range",
-    body: "Vertex Laminati products are positioned around the approvals Europe actually asks for: ETA, FSC, PEFC, Greenguard Gold, and CATAS. Documentation is ready for specification teams, procurement desks, and compliance reviews.",
+    title: "Intelligent Guidance",
+    body: "We combine market knowledge, technical understanding, and commercial awareness to help partners navigate specification, compliance, and range decisions with clarity.",
     icon: <CheckIcon />,
     link: "/certifications"
   },
   {
     number: "02",
-    title: "Italy-Based, Flexible Quantities",
-    body: "Our warehouse programme supports mixed pallets, recurring replenishment, and direct containers for higher-volume accounts. One commercial relationship, whether you buy trial quantities or full seasonal stock.",
+    title: "Tailored Solutions",
+    body: "We work alongside our partners to shape the right product and supply model, from mixed pallets and recurring replenishment to direct containers for higher-volume accounts.",
     icon: <WarehouseIcon />,
     link: "/logistics"
   },
   {
     number: "03",
-    title: "Built Since 1968",
-    body: "Our founding team brings more than 55 years of experience in European laminate distribution, built since 1968 across demanding distributor and fabricator markets.",
+    title: "Reliable Partnership",
+    body: "Our team brings laminate-market roots dating to 1968 and a commitment to consistent sourcing, responsive service, and long-term commercial relationships.",
     icon: <HeritageIcon />,
     link: "/about"
   }
@@ -75,8 +75,8 @@ function Home() {
   return (
     <>
       <PageTitle
-        title="European HPL & Compact Laminate Distribution"
-        description="Vertex Laminati supplies specification-grade HPL and compact laminate surfaces across Europe, backed by Italy-based logistics and certification-ready documentation."
+        title="Co-creator of possibilities"
+        description="Vertex Laminati SA guides and co-creates tailored HPL and compact laminate solutions, transforming possibility into long-term growth."
         path="/"
       />
 
@@ -84,20 +84,20 @@ function Home() {
         <section className="hero hero--home" style={{ backgroundImage: `url(${images.HERO_MAIN})` }}>
           <div className="hero__overlay hero__overlay--home" />
           <div className="hero__content hero__content--home">
-            <p className="hero-eyebrow">VERTEX LAMINATI - BUILT SINCE 1968</p>
+            <p className="hero-eyebrow">CO-CREATOR OF POSSIBILITIES</p>
             <h1 className="hero-h1">
-              Specification-grade laminates for <em>European distribution.</em>
+              Transforming possibility <em>into growth.</em>
             </h1>
             <p className="hero-sub">
-              Vertex Laminati supplies a proprietary HPL and compact laminate range backed by ETA, FSC, PEFC,
-              Greenguard Gold, and CATAS credentials, stocked through Italy and delivered across Europe.
+              We guide and co-create laminati solutions, tailored to help our partners realise their greatest
+              potential and unlock long-term success.
             </p>
             <div className="hero-ctas">
               <Link className="btn-primary" to="/contact">
-                Request a Quote
+                Contact us
               </Link>
               <Link className="btn-ghost" to="/products">
-                Explore the Range
+                View our collections
               </Link>
             </div>
           </div>
@@ -149,11 +149,11 @@ function Home() {
         <section className="section section--white">
           <div ref={valueRef} className="reveal">
             <div className="section-header section-header--centered">
-              <p className="section-label">WHY VERTEX</p>
-              <h2 className="section-title">Independent market positioning, built for long-term supply.</h2>
+              <p className="section-label">HOW WE CREATE VALUE</p>
+              <h2 className="section-title">Intelligent guidance. Tailored solutions.</h2>
               <p className="section-subtitle">
-                Vertex Laminati is positioned as an independent European HPL distributor with deep industry heritage,
-                proprietary public-facing branding, and the logistics discipline required by serious B2B buyers.
+                Creative thinking, collaborative relationships, and reliable execution turn complex laminate
+                decisions into clearer pathways for growth.
               </p>
             </div>
 
@@ -288,14 +288,14 @@ function Home() {
         <section ref={ctaRef} className="final-cta reveal">
           <div className="final-cta__bg" style={{ backgroundImage: `url(${images.EXTERIOR_1})` }} />
           <div className="final-cta__content">
-            <h2>Ready to plan your range, quantities, or market rollout?</h2>
+            <h2>What could we create together?</h2>
             <p>
-              We support distributors, fabricators, and project-led buyers with range guidance, certification packs,
-              and logistics options sized to the commercial opportunity.
+              Bring us your market opportunity, project requirement, or supply challenge. We will help shape the
+              laminati solution and pathway forward.
             </p>
             <div className="final-cta__actions">
               <Link className="btn-primary" to="/contact">
-                Speak to the Team
+                Start a conversation
               </Link>
               <Link className="btn-ghost" to="/certifications">
                 Review Certifications

@@ -48,7 +48,7 @@ function Logistics() {
           <div className="page-hero__overlay page-hero__overlay--dark" />
           <div className="page-hero__content page-hero__content--bottom">
             <p className="page-hero__breadcrumb">Home / Logistics</p>
-            <h1>Flexible volumes. Europe-first delivery.</h1>
+            <h1>Tailored supply. Reliable delivery.</h1>
             <p>
               Our Italy-based warehouse model and direct-container options let Vertex serve both repeat buyers and
               larger seasonal programmes.

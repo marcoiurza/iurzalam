@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://vertexlaminati.com/sitemap.xml
+Sitemap: https://vertexlaminati.ch/sitemap.xml

@@ -3,15 +3,19 @@ const withQuery = (url, width) => `${url}?auto=format&fit=crop&w=${width}&q=85`;
 export const siteMeta = {
   brandName: "Vertex Laminati",
   legalName: "Vertex Laminati SA",
-  siteUrl: "https://vertexlaminati.com",
-  defaultTitle: "Vertex Laminati | European HPL & Compact Laminate Distribution",
+  tagline: "Co-creator of possibilities.",
+  siteUrl: "https://vertexlaminati.ch",
+  defaultTitle: "Vertex Laminati SA | Co-creator of possibilities",
   defaultDescription:
-    "Vertex Laminati is a European distributor of specification-grade HPL and compact laminate surfaces, built since 1968 and supplied from Italy across Europe and selected global markets.",
-  email: "info@vertexlaminati.com",
-  office: "Chiasso, Ticino, Switzerland",
-  logisticsHub: "Northern Italy warehouse programme",
+    "Vertex Laminati SA guides and co-creates tailored HPL and compact laminate solutions, transforming possibility into long-term growth.",
+  email: "info@vertexlaminati.ch",
+  phone: "+41 79 958 78 73",
+  office: "Coldrerio, Ticino, Switzerland",
+  address: "Via P.F. Mola 26, 6877 Coldrerio, Switzerland",
+  logisticsHub: "Italy warehouse programme",
   responseTime: "Within one business day",
-  ogImage: "/vertex-logo.svg"
+  logo: "/brand/vertex-lockup-deep-blue.svg",
+  ogImage: "/vertex-og.png"
 };
 
 export const images = {
