@@ -182,7 +182,7 @@ function LaunchPage() {
         </div>
         <div className="launch-proof__certs" aria-label="Product documentation available">
           <span>Product documentation</span>
-          <strong>CE · FSC® support · EPD · GREENGUARD · M1 · DNV</strong>
+          <strong>CE · EPD · GREENGUARD · M1 · DNV</strong>
         </div>
         <div className="launch-proof__site-note">
           <span>Full website coming soon</span>

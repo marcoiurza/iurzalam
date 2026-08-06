@@ -19,19 +19,6 @@ const certifications = [
     background: "stone"
   },
   {
-    key: "FSC",
-    label: "FSC CHAIN OF CUSTODY",
-    full: "Manufacturer chain of custody",
-    title: "FSC chain-of-custody support",
-    bodyOne:
-      "Manufacturing partner Stylam Industries Limited holds FSC chain-of-custody certificate BV-COC-146497 / BV-CW-146497 for the manufacture and sale of HPL within FSC Mix, FSC Recycled, and FSC Controlled Wood scopes. The certificate expires on 25 February 2029.",
-    bodyTwo:
-      "A chain-of-custody certificate does not make every supplied sheet FSC certified. A product is treated as covered only when the appropriate FSC claim appears on the relevant sales and delivery documentation. Vertex confirms this at quotation and order stage.",
-    relevant:
-      "Order-specific FSC claims - Responsible sourcing reviews - Project documentation - Audited supply-chain evidence",
-    background: "white"
-  },
-  {
     key: "EPD",
     label: "ENVIRONMENTAL PRODUCT DECLARATION",
     full: "Compact HPL panels",
@@ -118,13 +105,13 @@ function Certifications() {
                 The current compliance pack is principally issued to Vertex&apos;s manufacturing partner, Stylam
                 Industries Limited. Vertex provides the original supporting documents for applicable products; it
                 does not present itself as the certificate holder, and no record is treated as universal across the
-                full range. Vertex FSC and PEFC chain-of-custody certification for Coldrerio and Turate is recorded as
-                in progress and will not be claimed as issued until the final certificates are available.
+                full range. Any future Vertex-held certification will only be referenced once it has been formally
+                issued and its exact scope has been verified.
               </p>
             </div>
             <div className="cert-intro__stats">
               <div className="cert-intro__stat">
-                <strong>6</strong>
+                <strong>5</strong>
                 <span>Evidence-backed documentation areas highlighted</span>
               </div>
               <div className="cert-intro__stat">
@@ -136,41 +123,6 @@ function Certifications() {
                 <span>Applicability confirmed per product and order</span>
               </div>
             </div>
-          </div>
-        </section>
-
-        <section className="section section--stone">
-          <div className="certification-landscape">
-            <div className="section-header section-header--split">
-              <div>
-                <p className="section-label">MANUFACTURING-LEVEL ASSURANCE</p>
-                <h2 className="section-title">A broader documentation landscape.</h2>
-              </div>
-              <p className="section-copy certification-landscape__intro">
-                The portfolio is supported by a wider set of product, environmental, marine, emissions, recycled
-                content, health, and management-system records. Logos are shown as a visual index, not as a blanket
-                claim across every Vertex product.
-              </p>
-            </div>
-            <figure className="certification-landscape__figure">
-              <div
-                className="certification-landscape__scroller"
-                role="region"
-                aria-label="Scrollable certification logo landscape"
-                tabIndex="0"
-              >
-                <img
-                  src="/brand/certification-landscape.jpg"
-                  alt="Manufacturing-level certification and compliance logo landscape from the 2026 Vertex company presentation"
-                  loading="lazy"
-                />
-              </div>
-              <figcaption>
-                Manufacturing-level certifications and supporting records. Applicability is confirmed by product,
-                grade, thickness, construction, destination market, and order documentation. Vertex FSC / PEFC
-                chain-of-custody certification remains in progress.
-              </figcaption>
-            </figure>
           </div>
         </section>
 

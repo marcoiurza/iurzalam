@@ -62,7 +62,6 @@ export const navLinks = [
 
 export const certificationItems = [
   { abbr: "CE / DoP", desc: "Compact wall panels" },
-  { abbr: "FSC CoC support", desc: "Manufacturer-held; claims by order" },
   { abbr: "EPD", desc: "Compact panel declaration" },
   { abbr: "GREENGUARD Gold", desc: "Manufacturer-held HPL certificate" },
   { abbr: "M1", desc: "Specified low-emission HPL" },
@@ -140,4 +139,4 @@ export const europeanCards = [
   { flag: "CH", country: "Switzerland", image: images.REACH_CH }
 ];
 
-export const footerCerts = ["CE / DoP", "FSC support", "EPD", "GREENGUARD Gold", "M1", "DNV"];
+export const footerCerts = ["CE / DoP", "EPD", "GREENGUARD Gold", "M1", "DNV"];
