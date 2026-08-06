@@ -8,7 +8,11 @@ import Certifications from "./pages/Certifications";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import Logistics from "./pages/Logistics";
+import LaunchPage from "./pages/LaunchPage";
 import Products from "./pages/Products";
+
+// The complete site remains available by building with VITE_SITE_MODE=full.
+const launchMode = import.meta.env.VITE_SITE_MODE !== "full";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -21,6 +25,10 @@ function ScrollToTop() {
 }
 
 function App() {
+  if (launchMode) {
+    return <LaunchPage />;
+  }
+
   return (
     <div className="app-shell">
       <ScrollToTop />
