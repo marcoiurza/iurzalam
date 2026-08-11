@@ -110,6 +110,28 @@ function EnquiryDialog({ open, onClose }) {
 
 function LaunchPage() {
   const [enquiryOpen, setEnquiryOpen] = useState(false);
+  const materialRef = useRef(null);
+
+  const handleMaterialPointerMove = (event) => {
+    if (
+      event.pointerType !== "mouse" ||
+      !window.matchMedia("(pointer: fine)").matches ||
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches
+    ) {
+      return;
+    }
+
+    const bounds = event.currentTarget.getBoundingClientRect();
+    const x = ((event.clientX - bounds.left) / bounds.width - 0.5) * 16;
+    const y = ((event.clientY - bounds.top) / bounds.height - 0.5) * 16;
+    materialRef.current?.style.setProperty("--pointer-x", `${x.toFixed(2)}px`);
+    materialRef.current?.style.setProperty("--pointer-y", `${y.toFixed(2)}px`);
+  };
+
+  const resetMaterialPointer = () => {
+    materialRef.current?.style.setProperty("--pointer-x", "0px");
+    materialRef.current?.style.setProperty("--pointer-y", "0px");
+  };
 
   return (
     <div className="launch-page-v2">
@@ -132,7 +154,10 @@ function LaunchPage() {
       <main className="launch-stage">
         <section className="launch-content" aria-labelledby="launch-title">
           <p className="launch-kicker">Swiss expertise · European reach</p>
-          <h1 id="launch-title">The right surface.<br /><em>The right solution.</em></h1>
+          <h1 id="launch-title">
+            <span className="launch-title__line"><span>The right surface.</span></span>
+            <span className="launch-title__line"><em>The right solution.</em></span>
+          </h1>
           <p className="launch-summary">
             Vertex guides distributors, fabricators and specifiers through decorative and technical laminates—with
             responsive sourcing from Switzerland and Italy.
@@ -140,7 +165,8 @@ function LaunchPage() {
 
           <div className="launch-cta-row">
             <button className="launch-primary-cta" type="button" onClick={() => setEnquiryOpen(true)}>
-              Request samples &amp; specifications <span aria-hidden="true">↗</span>
+              <span className="launch-primary-cta__label">Request samples &amp; specifications</span>
+              <span className="launch-primary-cta__icon" aria-hidden="true">↗</span>
             </button>
             <a className="launch-contact-link" href={`tel:${siteMeta.phone.replace(/\s/g, "")}`}>
               <span>Speak to us</span>
@@ -158,15 +184,27 @@ function LaunchPage() {
           </ol>
         </section>
 
-        <aside className="launch-material" aria-label="A curated selection of laminate panels and finishes">
-          <img src="/brand/vertex-materials-hero.jpg" alt="Layered decorative laminate panels in colour, wood, stone and metallic finishes" />
+        <aside
+          className="launch-material"
+          ref={materialRef}
+          aria-label="A curated selection of laminate panels and finishes"
+          onPointerMove={handleMaterialPointerMove}
+          onPointerLeave={resetMaterialPointer}
+        >
+          <div className="launch-material__media">
+            <img src="/brand/vertex-materials-hero.jpg" alt="Layered decorative laminate panels in colour, wood, stone and metallic finishes" />
+          </div>
           <div className="launch-material__header">
             <span>Material intelligence</span>
             <span>Europe</span>
           </div>
           <div className="launch-material__caption">
             <span aria-hidden="true">V</span>
-            <p>Colour. Texture.<br />Performance.</p>
+            <p className="launch-material__words" aria-label="Colour. Texture. Performance.">
+              <span aria-hidden="true">Colour.</span>
+              <span aria-hidden="true">Texture.</span>
+              <span aria-hidden="true">Performance.</span>
+            </p>
           </div>
         </aside>
       </main>

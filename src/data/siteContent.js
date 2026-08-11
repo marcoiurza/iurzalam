@@ -9,7 +9,7 @@ export const siteMeta = {
   defaultDescription:
     "Swiss distributor of high-pressure and compact decorative laminates, supplying European distributors, fabricators, and industrial converters.",
   email: "info@vertexlaminati.ch",
-  phone: "+41 79 958 78 73",
+  phone: "+41 91 641 39 70",
   office: "Coldrerio, Ticino, Switzerland",
   address: "Via P. F. Mola 26, 6877 Coldrerio, Switzerland",
   logisticsHub: "Via C. B. Cavour 129/A, 22078 Turate (CO), Italy",
