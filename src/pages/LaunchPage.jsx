@@ -5,9 +5,9 @@ import { siteMeta } from "../data/siteContent";
 import "../styles/launch.css";
 
 const capabilities = [
-  ["01", "Decorative & technical HPL"],
+  ["01", "Decorative & technical laminates"],
   ["02", "Compact & exterior systems"],
-  ["03", "Specialist surfaces & sourcing"]
+  ["03", "Specialist surfaces & tailored sourcing"]
 ];
 
 const proofPoints = [
@@ -114,8 +114,8 @@ function LaunchPage() {
   return (
     <div className="launch-page-v2">
       <PageTitle
-        title="Decorative & technical laminates"
-        description="Vertex Laminati supports European distributors, fabricators, and specifiers with decorative HPL, compact systems, specialist surfaces, and responsive sourcing."
+        title="Guiding performance. Creating possibility."
+        description="Vertex guides and co-creates innovative laminati solutions, tailored to help partners reach their greatest potential."
         path="/"
       />
 
@@ -125,17 +125,17 @@ function LaunchPage() {
         </a>
         <div className="launch-topbar__status">
           <span className="launch-topbar__dot" aria-hidden="true" />
-          <span>Open for business</span>
+          <span>Full website coming soon</span>
         </div>
       </header>
 
       <main className="launch-stage">
         <section className="launch-content" aria-labelledby="launch-title">
-          <p className="launch-kicker">Swiss expertise · European reach</p>
-          <h1 id="launch-title">The right surface.<br /><em>The right solution.</em></h1>
+          <p className="launch-kicker">Co-creator of possibilities</p>
+          <h1 id="launch-title">Guiding performance.<br /><em>Creating possibility.</em></h1>
           <p className="launch-summary">
-            Vertex guides distributors, fabricators and specifiers through decorative and technical laminates—with
-            responsive sourcing from Switzerland and Italy.
+            Vertex guides and co-creates innovative laminati solutions, tailored to help our partners reach their
+            greatest potential.
           </p>
 
           <div className="launch-cta-row">
@@ -165,7 +165,12 @@ function LaunchPage() {
             <span>Europe</span>
           </div>
           <div className="launch-material__caption">
-            <span aria-hidden="true">V</span>
+            <img
+              className="launch-material__symbol"
+              src="/brand/vertex-symbol-white.svg"
+              alt=""
+              aria-hidden="true"
+            />
             <p>Colour. Texture.<br />Performance.</p>
           </div>
         </aside>
@@ -180,9 +185,15 @@ function LaunchPage() {
             </div>
           ))}
         </div>
-        <div className="launch-proof__certs" aria-label="Product documentation available">
-          <span>Product documentation</span>
-          <strong>CE · EPD · GREENGUARD · M1 · DNV</strong>
+        <div className="launch-proof__addresses" aria-label="Vertex Laminati locations">
+          <address>
+            <span>Switzerland</span>
+            <strong>Via P. F. Mola 26<br />6877 Coldrerio</strong>
+          </address>
+          <address>
+            <span>Italy</span>
+            <strong>Via C. B. Cavour 129/A<br />22078 Turate (CO)</strong>
+          </address>
         </div>
         <div className="launch-proof__site-note">
           <span>Full website coming soon</span>
@@ -196,4 +207,3 @@ function LaunchPage() {
 }
 
 export default LaunchPage;
-
