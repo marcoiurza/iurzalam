@@ -5,9 +5,9 @@ import { siteMeta } from "../data/siteContent";
 import "../styles/launch.css";
 
 const capabilities = [
-  "Decorative & technical HPL",
-  "Compact & exterior systems",
-  "Specialist surfaces & sourcing"
+  ["01", "Decorative & technical HPL"],
+  ["02", "Compact & exterior systems"],
+  ["03", "Specialist surfaces & sourcing"]
 ];
 
 const proofPoints = [
@@ -131,24 +131,16 @@ function LaunchPage() {
 
       <main className="launch-stage">
         <section className="launch-content" aria-labelledby="launch-title">
-          <div className="launch-pattern" aria-hidden="true">
-            <span />
-            <span />
-            <span />
-          </div>
-          <p className="launch-kicker">Co-creator of possibilities</p>
-          <h1 id="launch-title">
-            <span className="launch-title__line">Guiding Performance.</span>
-            <span className="launch-title__line"><em>Creating Possibility.</em></span>
-          </h1>
+          <p className="launch-kicker">Swiss expertise · European reach</p>
+          <h1 id="launch-title">The right surface.<br /><em>The right solution.</em></h1>
           <p className="launch-summary">
-            Vertex guides and co-creates innovative laminati solutions, tailored to reach your greatest potential.
+            Vertex guides distributors, fabricators and specifiers through decorative and technical laminates—with
+            responsive sourcing from Switzerland and Italy.
           </p>
 
           <div className="launch-cta-row">
             <button className="launch-primary-cta" type="button" onClick={() => setEnquiryOpen(true)}>
-              <span className="launch-primary-cta__label">Request samples &amp; specifications</span>
-              <span className="launch-primary-cta__icon" aria-hidden="true">↗</span>
+              Request samples &amp; specifications <span aria-hidden="true">↗</span>
             </button>
             <a className="launch-contact-link" href={`tel:${siteMeta.phone.replace(/\s/g, "")}`}>
               <span>Speak to us</span>
@@ -156,28 +148,25 @@ function LaunchPage() {
             </a>
           </div>
 
-          <ul className="launch-capabilities" aria-label="Vertex Laminati capabilities">
-            {capabilities.map((label) => (
-              <li key={label}>
+          <ol className="launch-capabilities" aria-label="Vertex Laminati capabilities">
+            {capabilities.map(([number, label]) => (
+              <li key={number}>
+                <span>{number}</span>
                 <strong>{label}</strong>
               </li>
             ))}
-          </ul>
+          </ol>
         </section>
 
         <aside className="launch-material" aria-label="A curated selection of laminate panels and finishes">
-          <div className="launch-material__media">
-            <img src="/brand/vertex-materials-hero.jpg" alt="Layered decorative laminate panels in colour, wood, stone and metallic finishes" />
-          </div>
+          <img src="/brand/vertex-materials-hero.jpg" alt="Layered decorative laminate panels in colour, wood, stone and metallic finishes" />
           <div className="launch-material__header">
             <span>Material intelligence</span>
             <span>Europe</span>
           </div>
           <div className="launch-material__caption">
-            <img className="launch-material__symbol" src="/brand/vertex-symbol-white.svg" alt="" aria-hidden="true" />
-            <p>
-              Colour. Texture.<br />Performance.
-            </p>
+            <span aria-hidden="true">V</span>
+            <p>Colour. Texture.<br />Performance.</p>
           </div>
         </aside>
       </main>
@@ -207,3 +196,4 @@ function LaunchPage() {
 }
 
 export default LaunchPage;
+
