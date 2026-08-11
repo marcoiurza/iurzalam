@@ -5,9 +5,9 @@ import { siteMeta } from "../data/siteContent";
 import "../styles/launch.css";
 
 const capabilities = [
-  ["01", "Decorative & technical HPL"],
-  ["02", "Compact & exterior systems"],
-  ["03", "Specialist surfaces & sourcing"]
+  "Decorative & technical HPL",
+  "Compact & exterior systems",
+  "Specialist surfaces & sourcing"
 ];
 
 const proofPoints = [
@@ -110,28 +110,6 @@ function EnquiryDialog({ open, onClose }) {
 
 function LaunchPage() {
   const [enquiryOpen, setEnquiryOpen] = useState(false);
-  const materialRef = useRef(null);
-
-  const handleMaterialPointerMove = (event) => {
-    if (
-      event.pointerType !== "mouse" ||
-      !window.matchMedia("(pointer: fine)").matches ||
-      window.matchMedia("(prefers-reduced-motion: reduce)").matches
-    ) {
-      return;
-    }
-
-    const bounds = event.currentTarget.getBoundingClientRect();
-    const x = ((event.clientX - bounds.left) / bounds.width - 0.5) * 16;
-    const y = ((event.clientY - bounds.top) / bounds.height - 0.5) * 16;
-    materialRef.current?.style.setProperty("--pointer-x", `${x.toFixed(2)}px`);
-    materialRef.current?.style.setProperty("--pointer-y", `${y.toFixed(2)}px`);
-  };
-
-  const resetMaterialPointer = () => {
-    materialRef.current?.style.setProperty("--pointer-x", "0px");
-    materialRef.current?.style.setProperty("--pointer-y", "0px");
-  };
 
   return (
     <div className="launch-page-v2">
@@ -153,14 +131,18 @@ function LaunchPage() {
 
       <main className="launch-stage">
         <section className="launch-content" aria-labelledby="launch-title">
-          <p className="launch-kicker">Swiss expertise · European reach</p>
+          <div className="launch-pattern" aria-hidden="true">
+            <span />
+            <span />
+            <span />
+          </div>
+          <p className="launch-kicker">Co-creator of possibilities</p>
           <h1 id="launch-title">
-            <span className="launch-title__line"><span>The right surface.</span></span>
-            <span className="launch-title__line"><em>The right solution.</em></span>
+            <span className="launch-title__line">Guiding Performance.</span>
+            <span className="launch-title__line"><em>Creating Possibility.</em></span>
           </h1>
           <p className="launch-summary">
-            Vertex guides distributors, fabricators and specifiers through decorative and technical laminates—with
-            responsive sourcing from Switzerland and Italy.
+            Vertex guides and co-creates innovative laminati solutions, tailored to reach your greatest potential.
           </p>
 
           <div className="launch-cta-row">
@@ -174,23 +156,16 @@ function LaunchPage() {
             </a>
           </div>
 
-          <ol className="launch-capabilities" aria-label="Vertex Laminati capabilities">
-            {capabilities.map(([number, label]) => (
-              <li key={number}>
-                <span>{number}</span>
+          <ul className="launch-capabilities" aria-label="Vertex Laminati capabilities">
+            {capabilities.map((label) => (
+              <li key={label}>
                 <strong>{label}</strong>
               </li>
             ))}
-          </ol>
+          </ul>
         </section>
 
-        <aside
-          className="launch-material"
-          ref={materialRef}
-          aria-label="A curated selection of laminate panels and finishes"
-          onPointerMove={handleMaterialPointerMove}
-          onPointerLeave={resetMaterialPointer}
-        >
+        <aside className="launch-material" aria-label="A curated selection of laminate panels and finishes">
           <div className="launch-material__media">
             <img src="/brand/vertex-materials-hero.jpg" alt="Layered decorative laminate panels in colour, wood, stone and metallic finishes" />
           </div>
@@ -199,11 +174,9 @@ function LaunchPage() {
             <span>Europe</span>
           </div>
           <div className="launch-material__caption">
-            <span aria-hidden="true">V</span>
-            <p className="launch-material__words" aria-label="Colour. Texture. Performance.">
-              <span aria-hidden="true">Colour.</span>
-              <span aria-hidden="true">Texture.</span>
-              <span aria-hidden="true">Performance.</span>
+            <img className="launch-material__symbol" src="/brand/vertex-symbol-white.svg" alt="" aria-hidden="true" />
+            <p>
+              Colour. Texture.<br />Performance.
             </p>
           </div>
         </aside>
